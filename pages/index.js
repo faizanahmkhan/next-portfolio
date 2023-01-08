@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
-import {DiHtml5, DiCss3Full } from "react-icons/di"
+import { DiHtml5, DiCss3Full } from "react-icons/di";
 import face1 from "../public/face-1.jpg";
 import face2 from "../public/face-2.png";
 import face3 from "../public/face-4.png";
@@ -31,8 +31,6 @@ export default function Home() {
       </Head>
 
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
-
-
         <section className="">
           <nav className="py-10 flex- ">
             <ul className="flex items-center justify-around">
@@ -45,7 +43,7 @@ export default function Home() {
                   dark:hover:from-orange-600 dark:hover:to-pink-600"
                   href="#"
                 >
-                 &nbsp; CV &nbsp; 
+                  &nbsp; CV &nbsp;
                 </a>
               </li>
               <li>
@@ -94,64 +92,83 @@ export default function Home() {
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-300">
               I love exploring and creating <br />
               I'm a lifelong learner <br />
-              <span className="">Looking for opportunities in the industry</span>
+              <span className="">
+                Looking for opportunities in the industry
+              </span>
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 text-gray-600 dark:text-white">
-            <a href="https://www.linkedin.com/in/faizanahmkhan/" target="_blank">
-              <AiFillLinkedin className="hover:text-blue-500 hover:scale-110"/>
-              </a>
+            <a
+              href="https://www.linkedin.com/in/faizanahmkhan/"
+              target="_blank"
+            >
+              <AiFillLinkedin className="hover:text-blue-500 hover:scale-110" />
+            </a>
             <a href="https://github.com/faizanahmkhan" target="_blank">
-              <AiFillGithub className="hover:text-gray-400 hover:scale-110"/>
-              </a>
+              <AiFillGithub className="hover:text-gray-400 hover:scale-110" />
+            </a>
             <a href="mailto:faizanahmkhan@gmail.com">
-              <AiFillMail className="hover:text-yellow-600 hover:scale-110 "/>
+              <AiFillMail className="hover:text-yellow-400 hover:scale-110 " />
             </a>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-            {darkMode ? <Image src={face3} layout="fill" objectFit="cover" />: <Image src={face1} layout="fill" objectFit="cover" />}
+            {darkMode ? (
+              <Image src={face3} layout="fill" objectFit="cover" />
+            ) : (
+              <Image src={face1} layout="fill" objectFit="cover" />
+            )}
           </div>
         </section>
 
         <section className="mt-10">
           <div>
-            <h3 className="text-center text-5xl font-medium py-10 text-black">
+            <h3 className="text-center text-5xl font-medium py-10 text-black dark:text-white">
               About Me
             </h3>
-            <h2 className="text-center text-3xl font-semibold text-teal-600 mt-6 mb-4">
+            <h2 className="text-center text-3xl font-semibold text-teal-600 mt-6 mb-4 dark:text-pink-400">
               Background
             </h2>
             <div className="flex">
               <p className="w-1/5"></p>
-            <p className="text-center py-2 leading-8 text-gray-800 max-w-4xl w-3/5">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
-              cum ea temporibus,{" "}
-              <span className="text-teal-400"> facilis voluptates sint</span>{" "}
-              eum voluptatibus dolorum, doloremque iure maxime quia obcaecati
-              dolorem eius modi. Laborum corporis molestias laboriosam
-              reprehenderit? Voluptate nobis, minima inventore repellendus
-              deserunt cupiditate obcaecati repellat.
-            </p>
-            <p className="w-1/5"></p>
+              <p className="text-center py-2 leading-8 text-gray-800 max-w-4xl w-3/5 dark:text-gray-300">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Eligendi cum ea temporibus,{" "}
+                <span className="text-teal-400"> facilis voluptates sint</span>{" "}
+                eum voluptatibus dolorum, doloremque iure maxime quia obcaecati
+                dolorem eius modi. Laborum corporis molestias laboriosam
+                reprehenderit? Voluptate nobis, minima inventore repellendus
+                deserunt cupiditate obcaecati repellat.
+              </p>
+              <p className="w-1/5"></p>
             </div>
           </div>
 
           <div>
-            <h2 className="text-center text-3xl font-semibold text-teal-600 m-14">
+            <h2 className="text-center text-3xl font-semibold text-teal-600 m-14 dark:text-pink-400">
               Skills & Tools
             </h2>
-              <div className="flex">
-                <p className="w-1/5"></p>
-                <div className="text-black text-center grid-cols-5">
-                  <DiCss3Full className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110"/>
-                  <span className="font-medium hover:text-blue-400">CSS</span>
-                  
-                </div>
-                <p className="w-1/5"></p>
+            <div className="flex gap-32">
+              <p className="w-1/5"></p>
+
+              <div className="text-black text-center grid-cols-5 dark:text-white">
+                <DiCss3Full 
+                className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
+                dark:hover:text-blue-500" 
+                />
+                <span className="font-medium hover:text-blue-400">CSS</span>
               </div>
+
+              <div className="text-black text-center grid-cols-5 dark:text-white">
+              <DiHtml5 
+              className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
+                dark:hover:text-blue-500" 
+                />
+              <span className="font-medium hover:text-blue-400">HTML</span>  
+              </div>
+              
+              <p className="w-1/5"></p>
+            </div>
           </div>
-
-
 
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
