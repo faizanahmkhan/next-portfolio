@@ -223,6 +223,43 @@ export default function Home() {
               <p className="w-1/5"></p>
             </div>
             
+            <div className="flex gap-44 mt-8">
+              <p className="w-1/5"></p>
+
+              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
+                <DiCss3Full 
+                className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
+                dark:hover:text-blue-500" 
+                />
+                <span className="font-medium hover:text-blue-400">CSS</span>
+              </div>
+
+              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
+              <DiHtml5 
+              className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
+                dark:hover:text-blue-500" 
+                />
+              <span className="font-medium hover:text-blue-400">HTML</span>  
+              </div>
+
+              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
+              <DiHtml5 
+              className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
+                dark:hover:text-blue-500" 
+                />
+              <span className="font-medium hover:text-blue-400">HTML</span>  
+              </div>
+
+              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
+              <DiHtml5 
+              className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
+                dark:hover:text-blue-500" 
+                />
+              <span className="font-medium hover:text-blue-400">HTML</span>  
+              </div>
+              <p className="w-1/5"></p>
+            </div>
+
           </div>
 
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
