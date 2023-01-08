@@ -3,7 +3,9 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
-import { DiHtml5, DiCss3Full } from "react-icons/di";
+import { DiHtml5, DiCss3Full, DiReact, DiJava, DiPython, DiPostgresql, DiGit } from "react-icons/di";
+import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io";
+import { SiSpringboot, SiPostman } from "react-icons/si"
 import face1 from "../public/face-1.jpg";
 import face2 from "../public/face-2.png";
 import face3 from "../public/face-4.png";
@@ -150,7 +152,7 @@ export default function Home() {
             <div className="flex gap-32">
               <p className="w-1/5"></p>
 
-              <div className="text-black text-center grid-cols-5 dark:text-white">
+              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
                 <DiCss3Full 
                 className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
                 dark:hover:text-blue-500" 
@@ -158,7 +160,7 @@ export default function Home() {
                 <span className="font-medium hover:text-blue-400">CSS</span>
               </div>
 
-              <div className="text-black text-center grid-cols-5 dark:text-white">
+              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
               <DiHtml5 
               className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
                 dark:hover:text-blue-500" 
@@ -166,6 +168,30 @@ export default function Home() {
               <span className="font-medium hover:text-blue-400">HTML</span>  
               </div>
               
+              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
+              <DiHtml5 
+              className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
+                dark:hover:text-blue-500" 
+                />
+              <span className="font-medium hover:text-blue-400">HTML</span>  
+              </div>
+
+              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
+              <DiHtml5 
+              className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
+                dark:hover:text-blue-500" 
+                />
+              <span className="font-medium hover:text-blue-400">HTML</span>  
+              </div>
+
+              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
+              <DiHtml5 
+              className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
+                dark:hover:text-blue-500" 
+                />
+              <span className="font-medium hover:text-blue-400">HTML</span>  
+              </div>
+
               <p className="w-1/5"></p>
             </div>
           </div>
@@ -224,7 +250,7 @@ export default function Home() {
 
         <section>
           <div className="my-10">
-            <h3 className="text-center text-5xl font-medium  text-black">
+            <h3 className="text-center text-5xl font-medium  text-black dark:text-white">
               Projects
             </h3>
           </div>
