@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 import { DiHtml5, DiCss3Full, DiReact, DiJava, DiPython, DiPostgresql, DiGit } from "react-icons/di";
-import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io";
+import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
 import { SiSpringboot, SiPostman } from "react-icons/si"
 import face1 from "../public/face-1.jpg";
 import face2 from "../public/face-2.png";
@@ -149,18 +149,18 @@ export default function Home() {
             <h2 className="text-center text-3xl font-semibold text-teal-600 m-14 dark:text-pink-400">
               Skills & Tools
             </h2>
-            <div className="flex gap-44">
-              <p className="w-1/5"></p>
+            <div className="grid md:grid-cols-4 px-56">
+              {/* <p className="w-1/5"></p> */}
 
-              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
-                <DiCss3Full 
+              <div className="text-gray-600 text-center dark:text-white">
+                <span className="font-medium hover:text-blue-400">CSS</span><DiCss3Full 
                 className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
                 dark:hover:text-blue-500" 
-                />
-                <span className="font-medium hover:text-blue-400">CSS</span>
+                > </DiCss3Full>
+                
               </div>
 
-              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
+              <div className="text-gray-600 text-center dark:text-white">
               <DiHtml5 
               className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
                 dark:hover:text-blue-500" 
@@ -168,154 +168,30 @@ export default function Home() {
               <span className="font-medium hover:text-blue-400">HTML</span>  
               </div>
 
-              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
+              <div className="text-gray-600 text-center dark:text-white">
+              <IoLogoJavascript 
+              className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
+                dark:hover:text-blue-500 " 
+                />
+              <span className="font-medium hover:text-blue-400 text-center">JavaScript</span>  
+              </div>
+
+              <div className="text-gray-600 text-center dark:text-white">
               <DiHtml5 
               className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
                 dark:hover:text-blue-500" 
                 />
               <span className="font-medium hover:text-blue-400">HTML</span>  
               </div>
-
-              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
-              <DiHtml5 
-              className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
-                dark:hover:text-blue-500" 
-                />
-              <span className="font-medium hover:text-blue-400">HTML</span>  
-              </div>
-              <p className="w-1/5"></p>
-            </div>
-
-            <div className="flex gap-44 mt-8">
-              <p className="w-1/5"></p>
-
-              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
-                <DiCss3Full 
-                className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
-                dark:hover:text-blue-500" 
-                />
-                <span className="font-medium hover:text-blue-400">CSS</span>
-              </div>
-
-              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
-              <DiHtml5 
-              className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
-                dark:hover:text-blue-500" 
-                />
-              <span className="font-medium hover:text-blue-400">HTML</span>  
-              </div>
-
-              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
-              <DiHtml5 
-              className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
-                dark:hover:text-blue-500" 
-                />
-              <span className="font-medium hover:text-blue-400">HTML</span>  
-              </div>
-
-              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
-              <DiHtml5 
-              className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
-                dark:hover:text-blue-500" 
-                />
-              <span className="font-medium hover:text-blue-400">HTML</span>  
-              </div>
-              <p className="w-1/5"></p>
-            </div>
-            
-            <div className="flex gap-44 mt-8">
-              <p className="w-1/5"></p>
-
-              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
-                <DiCss3Full 
-                className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
-                dark:hover:text-blue-500" 
-                />
-                <span className="font-medium hover:text-blue-400">CSS</span>
-              </div>
-
-              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
-              <DiHtml5 
-              className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
-                dark:hover:text-blue-500" 
-                />
-              <span className="font-medium hover:text-blue-400">HTML</span>  
-              </div>
-
-              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
-              <DiHtml5 
-              className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
-                dark:hover:text-blue-500" 
-                />
-              <span className="font-medium hover:text-blue-400">HTML</span>  
-              </div>
-
-              <div className="text-gray-600 text-center grid-cols-4 dark:text-white">
-              <DiHtml5 
-              className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
-                dark:hover:text-blue-500" 
-                />
-              <span className="font-medium hover:text-blue-400">HTML</span>  
-              </div>
-              <p className="w-1/5"></p>
+              {/* <p className="w-1/5"></p> */}
             </div>
 
           </div>
 
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web1}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height="{100%}"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web2}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height="{100%}"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web3}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height="{100%}"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web4}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height="{100%}"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web5}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height="{100%}"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web6}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height="{100%}"
-              />
-            </div>
-          </div>
         </section>
 
-        <section>
-          <div className="my-10">
+        <section className="pt-10">
+          <div className="m-10">
             <h3 className="text-center text-5xl font-medium  text-black dark:text-white">
               Projects
             </h3>
