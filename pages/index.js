@@ -40,7 +40,9 @@ export default function Home() {
                 <a
                   className=" 
                   bg-gradient-to-r  from-cyan-500 to-teal-500 font-bold text-white px-4 py-2 rounded-md ml-8
-                  hover:from-cyan-700 hover:to-teal-700"
+                  hover:from-cyan-700 hover:to-teal-700
+                  dark:bg-gradient-to-r dark:from-orange-400 dark:to-pink-400 
+                  dark:hover:from-orange-600 dark:hover:to-pink-600"
                   href="#"
                 >
                  &nbsp; CV &nbsp; 
@@ -50,7 +52,9 @@ export default function Home() {
                 <a
                   className="
                   bg-gradient-to-r from-cyan-500 to-teal-500 font-bold text-white px-4 py-2 rounded-md ml-8
-                  hover:from-cyan-700 hover:to-teal-700"
+                  hover:from-cyan-700 hover:to-teal-700
+                  dark:bg-gradient-to-r dark:from-orange-400 dark:to-pink-400 
+                  dark:hover:from-orange-600 dark:hover:to-pink-600"
                   href="#"
                 >
                   About Me
@@ -60,7 +64,9 @@ export default function Home() {
                 <a
                   className="
                   bg-gradient-to-r from-cyan-500 to-teal-500 font-bold text-white px-4 py-2 rounded-md ml-8
-                  hover:from-cyan-700 hover:to-teal-700"
+                  hover:from-cyan-700 hover:to-teal-700
+                  dark:bg-gradient-to-r dark:from-orange-400 dark:to-pink-400 
+                  dark:hover:from-orange-600 dark:hover:to-pink-600"
                   href="#"
                 >
                   Projects
@@ -79,22 +85,28 @@ export default function Home() {
 
         <section>
           <div className="text-center px-10 my-10">
-            <h2 className="text-5xl py-3 text-teal-600 font-medium md:text-6xl">
+            <h2 className="text-5xl py-3 text-teal-600 font-medium md:text-6xl dark:text-pink-400">
               Hi, I'm Faizan Ahmed Khan
             </h2>
-            <h3 className="text-2xl pt-3 text-black md:text-3xl">
+            <h3 className="text-2xl pt-3 text-black md:text-3xl dark:text-white">
               Full-Stack Software Developer
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-300">
               I love exploring and creating <br />
               I'm a lifelong learner <br />
               <span className="">Looking for opportunities in the industry</span>
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 text-gray-600">
-            <a href="https://www.linkedin.com/in/faizanahmkhan/" target="_blank"><AiFillLinkedin  /></a>
-            <a href="https://github.com/faizanahmkhan" target="_blank"><AiFillGithub /></a>
-            <a href="mailto:faizanahmkhan@gmail.com"><AiFillMail /></a>
+          <div className="text-5xl flex justify-center gap-16 text-gray-600 dark:text-white">
+            <a href="https://www.linkedin.com/in/faizanahmkhan/" target="_blank">
+              <AiFillLinkedin className="hover:text-blue-500 hover:scale-110"/>
+              </a>
+            <a href="https://github.com/faizanahmkhan" target="_blank">
+              <AiFillGithub className="hover:text-gray-400 hover:scale-110"/>
+              </a>
+            <a href="mailto:faizanahmkhan@gmail.com">
+              <AiFillMail className="hover:text-yellow-600 hover:scale-110 "/>
+            </a>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             {darkMode ? <Image src={face3} layout="fill" objectFit="cover" />: <Image src={face1} layout="fill" objectFit="cover" />}
@@ -132,7 +144,7 @@ export default function Home() {
                 <p className="w-1/5"></p>
                 <div className="text-black text-center grid-cols-5">
                   <DiCss3Full className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110"/>
-                  <span className="hover:text-blue">CSS</span>
+                  <span className="font-medium hover:text-blue-400">CSS</span>
                   
                 </div>
                 <p className="w-1/5"></p>
