@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 import deved from '../public/dev-ed-wave.png';
 import design from '../public/design.png';
 import code from '../public/code.png';
@@ -29,38 +29,60 @@ export default function Home() {
 
     
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-800">
-        <div >
-          <section className="min-h-screen">
-            <nav className="py-10 mb-12 flex justify-between">
-              <h1 className="text-xl text-black">Created with React</h1>
-              <ul className="flex items-center">
+      
+
+          <section className="">
+            <nav className="py-10 flex- ">
+              <ul className="flex items-center justify-around">
+                
                 <li>
-                  <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl text-black" />
+                  <a
+                    className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                    href="#"
+                  >
+                    My CV
+                  </a>
                 </li>
                 <li>
                   <a
                     className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
                     href="#"
                   >
-                    Resume
+                    About
                   </a>
                 </li>
-              </ul>
+                <li>
+                  <a
+                    className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                    href="#"
+                  >
+                    Projects
+                  </a>
+                </li>  
+                
+                <div className="">
+                  <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl text-black" />
+                </div>
+              </ul>  
             </nav>
-            <div className="text-center p-10 py-10">
+            </section>
+
+            <section>
+            <div className="text-center p-10 py-10 my-10">
               <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
-                Faizan Khan
+                Hi, I'm Faizan Ahmed Khan
               </h2>
-              <h3 className="text-2xl py-2 text-black md:text-3xl">Developer and designer</h3>
+              <h3 className="text-2xl py-2 text-black md:text-3xl">Full-Stack Software Developer</h3>
               <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
-                natus suscipit vel ipsam rerum dolorem harum. Voluptates ab
-                nulla consectetur!
+                I love exploring and creating <br/>
+                I'm a lifelong learner <br/>
+                And I support Liverpool
               </p>
             </div>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
               <AiFillLinkedin />
               <AiFillGithub />
+              <AiFillMail />
             </div>
             <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
               <Image src={deved} layout='fill' objectFit="cover" />
@@ -68,9 +90,9 @@ export default function Home() {
           </section>
           
           <section>
-            <div>
-            <h3 className="text-3xl py-1 text-black">Services I offer</h3>
-            <p className="text-md py-2 leading-8 text-gray-800">
+            <div className="my-10">
+            <h3 className="text-center text-5xl font-medium py-10 text-black">About</h3>
+            <p className="text-md py-6 leading-8 text-gray-800">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi cum ea temporibus, <span className='text-teal-400'> facilis voluptates sint</span> eum voluptatibus dolorum, doloremque iure maxime quia obcaecati dolorem eius modi. Laborum corporis molestias laboriosam reprehenderit? Voluptate nobis, minima inventore repellendus deserunt cupiditate obcaecati repellat.
             </p>
             </div>
@@ -126,7 +148,7 @@ export default function Home() {
               <div className="basis-1/3 flex-1"><Image src={web6} className='rounded-lg object-cover' width={'100%'} height='{100%}'/></div>
             </div>
           </section>
-        </div>
+        
       </main>
     </div>
   );
