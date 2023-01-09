@@ -125,10 +125,10 @@ export default function Home() {
 
         <section className="mt-10">
           <div>
-            <h3 className="text-center text-4xl sm:text-5xl font-medium py-10 text-black dark:text-white">
+            <h3 className="text-center text-4xl md:text-5xl font-medium py-10 text-black dark:text-white">
               About Me
             </h3>
-            <h2 className="text-center text-2xl sm:text-3xl font-semibold text-teal-600 mt-6 mb-4 dark:text-pink-400">
+            <h2 className="text-center text-2xl md:text-3xl font-semibold text-teal-600 mt-6 mb-4 dark:text-pink-400">
               Background
             </h2>
             <div className="flex">
@@ -147,12 +147,12 @@ export default function Home() {
           </div>
 
           <div>
-            <h2 className="text-center text-2xl sm:text-3xl font-semibold text-teal-600 m-14 dark:text-pink-400">
+            <h2 className="text-center text-2xl md:text-3xl font-semibold text-teal-600 m-14 dark:text-pink-400">
               Skills & Tools
             </h2>
 
 
-            <div className="grid grid-cols-4 px-52 md:max-xl:grid-cols-3 sm:max-md:grid-cols-2">
+            <div className="grid grid-cols-4 lg:max:xl:px-30 xl:px-56">
         
               <div className="text-gray-600  dark:text-white flex flex-col justify-center items-center">
                 <DiCss3Full 
@@ -258,7 +258,7 @@ export default function Home() {
 
         <section className="pt-10">
           <div className="m-10">
-            <h3 className="text-center text-5xl font-medium  text-black dark:text-white">
+            <h3 className="text-center text-4xl md:text-5xl font-medium  text-black dark:text-white">
               Projects
             </h3>
           </div>
