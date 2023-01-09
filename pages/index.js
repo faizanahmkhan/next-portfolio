@@ -29,8 +29,8 @@ export default function Home() {
 
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="">
-          <nav className="py-10 flex- ">
-            <ul className="flex items-center justify-around">
+          <nav className="sm:py-10">
+            <ul className=" space-y-6 flex-col place-items-center flex sm:space-y-0 sm:flex-row justify-between xl:px-36 ">
               <li>
                 <a
                   className=" 
@@ -69,7 +69,7 @@ export default function Home() {
                 </a>
               </li>
 
-              <div className="">
+              <div >
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
                   className="cursor-pointer text-2xl text-gray-800 hover:scale-125 dark:text-white"
