@@ -12,13 +12,8 @@ import face3 from "../public/face-4.png";
 import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
 import { useState } from "react";
+import Resume from "./PDFFile";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -43,7 +38,9 @@ export default function Home() {
                   hover:from-cyan-700 hover:to-teal-700
                   dark:bg-gradient-to-r dark:from-orange-400 dark:to-pink-400 
                   dark:hover:from-orange-600 dark:hover:to-pink-600"
-                  href="#"
+                  href= "https://drive.google.com/file/d/1HePbe5Go0os8pzI5kaoU90dwaOdp_aWT/view?usp=pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   &nbsp; CV &nbsp;
                 </a>
