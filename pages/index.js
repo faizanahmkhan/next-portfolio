@@ -5,7 +5,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 import { DiHtml5, DiCss3Full, DiReact, DiJava, DiPython, DiPostgresql, DiGit } from "react-icons/di";
 import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
-import { SiSpringboot, SiPostman } from "react-icons/si"
+import { SiSpringboot, SiPostman, SiTailwindcss } from "react-icons/si"
 import face1 from "../public/face-1.jpg";
 import face2 from "../public/face-2.png";
 import face3 from "../public/face-4.png";
@@ -151,7 +151,7 @@ export default function Home() {
             </h2>
 
 
-            <div className="grid md:grid-cols-4 px-52">
+            <div className="grid lg:grid-cols-4 px-52 sm:grid-cols-3 ">
         
               <div className="text-gray-600  dark:text-white flex flex-col justify-center items-center">
                 <DiCss3Full 
@@ -163,26 +163,90 @@ export default function Home() {
 
               <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center">
               <DiHtml5 
-              className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
-                dark:hover:text-blue-500" 
+              className="text-gray-600 text-5xl hover:text-orange-400 hover:scale-110 dark:text-white
+                 dark:hover:text-orange-400" 
                 />
-              <span className="font-medium hover:text-blue-400">HTML</span>  
+              <span className="font-medium hover:text-orange-400">HTML</span>  
               </div>
 
               <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center">
               <IoLogoJavascript 
-              className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
-                dark:hover:text-blue-500 " 
+              className="text-gray-600 text-5xl hover:text-yellow-500 hover:scale-110 dark:text-white
+                dark:hover:text-yellow-500 " 
                 />
-              <span className="font-medium hover:text-blue-400 text-center">JavaScript</span>  
+              <span className="font-medium hover:text-yellow-400 text-center">JavaScript</span>  
               </div>
 
               <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center">
-              <DiHtml5 
-              className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
-                dark:hover:text-blue-500" 
+              <DiReact 
+              className="text-gray-600 text-5xl hover:text-blue-300 hover:scale-110 dark:text-white
+                dark:hover:text-blue-300" 
                 />
-              <span className="font-medium hover:text-blue-400">HTML</span>  
+              <span className="font-medium hover:text-blue-400">React</span>  
+              </div>
+
+              <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-8">
+              <DiJava 
+              className="text-gray-600 text-5xl hover:text-red-500 hover:scale-110 dark:text-white
+                dark:hover:text-red-500" 
+                />
+              <span className="font-medium hover:text-red-400">Java</span>  
+              </div>
+
+              <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-8">
+              <DiPython 
+              className="text-gray-600 text-5xl hover:text-blue-600 hover:scale-110 dark:text-white
+                dark:hover:text-blue-600" 
+                />
+              <span className="font-medium hover:text-blue-600">Python</span>  
+              </div>
+
+              <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-8">
+              <DiPostgresql 
+              className="text-gray-600 text-5xl hover:text-sky-700 hover:scale-110 dark:text-white
+                dark:hover:text-sky-700" 
+                />
+              <span className="font-medium hover:text-sky-700">PostgreSQL</span>  
+              </div>
+              
+              <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-8">
+              <DiGit 
+              className="text-gray-600 text-5xl hover:text-red-400 hover:scale-110 dark:text-white
+                dark:hover:text-red-400" 
+                />
+              <span className="font-medium hover:text-blue-400">Git</span>  
+              </div>
+              
+              <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-10">
+              <SiSpringboot 
+              className="text-gray-600 text-4xl hover:text-lime-500 hover:scale-110 dark:text-white
+              dark:hover:text-lime-500" 
+              />
+              <span className="font-medium hover:text-lime-500">Spring Boot</span>  
+              </div>
+
+              <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-10">
+              <IoLogoFirebase 
+              className="text-gray-600 text-4xl hover:text-yellow-400 hover:scale-110 dark:text-white
+                dark:hover:text-yellow-500" 
+                />
+              <span className="font-medium hover:text-yellow-400">Firebase</span>  
+              </div>
+
+              <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-10">
+              <SiPostman 
+              className="text-gray-600 text-4xl hover:text-orange-500 hover:scale-110 dark:text-white
+                dark:hover:text-orange-500" 
+                />
+              <span className="font-medium hover:text-orange-400">Postman</span>  
+              </div>
+
+              <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-10">
+              <SiTailwindcss 
+              className="text-gray-600 text-4xl hover:text-cyan-500 hover:scale-110 dark:text-white
+                dark:hover:text-cyan-500" 
+                />
+              <span className="font-medium hover:text-cyan-400">Tailwind</span>  
               </div>
               
             </div>
