@@ -133,7 +133,7 @@ export default function Home() {
             </h2>
             <div className="flex">
               <p className="xl:w-1/5"></p>
-              <p className=" text-center px-4 sm:px-0 py-2 leading-8 sm:leading-10 text-gray-800 xl:w-3/5 dark:text-gray-300">
+              <p className=" text-center sm:text-xl px-4 sm:px-0 py-2 leading-8 sm:leading-10 text-gray-800 xl:w-3/5 dark:text-gray-300">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Eligendi cum ea temporibus,{" "}
                 <span className="text-teal-400"> facilis voluptates sint</span>{" "}
@@ -156,7 +156,7 @@ export default function Home() {
         
               <div className="text-gray-600  dark:text-white flex flex-col justify-center items-center">
                 <DiCss3Full 
-                className="text-gray-600 text-5xl hover:text-blue-700 hover:scale-110 dark:text-white
+                className="text-gray-600 text-4xl sm:text-5xl hover:text-blue-700 hover:scale-110 dark:text-white
                 dark:hover:text-blue-700 " />
                 
                 <span className="font-medium hover:text-blue-700">CSS</span>
@@ -164,7 +164,7 @@ export default function Home() {
 
               <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center">
               <DiHtml5 
-              className="text-gray-600 text-5xl hover:text-orange-400 hover:scale-110 dark:text-white
+              className="text-gray-600 text-4xl sm:text-5xl hover:text-orange-400 hover:scale-110 dark:text-white
                  dark:hover:text-orange-400" 
                 />
               <span className="font-medium hover:text-orange-400">HTML</span>  
@@ -172,7 +172,7 @@ export default function Home() {
 
               <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center">
               <IoLogoJavascript 
-              className="text-gray-600 text-5xl hover:text-yellow-500 hover:scale-110 dark:text-white
+              className="text-gray-600 text-4xl sm:text-5xl hover:text-yellow-500 hover:scale-110 dark:text-white
                 dark:hover:text-yellow-500 " 
                 />
               <span className="font-medium hover:text-yellow-400 text-center">JavaScript</span>  
@@ -180,7 +180,7 @@ export default function Home() {
 
               <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center">
               <DiReact 
-              className="text-gray-600 text-5xl hover:text-blue-300 hover:scale-110 dark:text-white
+              className="text-gray-600 text-4xl sm:text-5xl hover:text-blue-300 hover:scale-110 dark:text-white
                 dark:hover:text-blue-300" 
                 />
               <span className="font-medium hover:text-blue-400">React</span>  
@@ -188,7 +188,7 @@ export default function Home() {
 
               <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-8">
               <DiJava 
-              className="text-gray-600 text-5xl hover:text-red-500 hover:scale-110 dark:text-white
+              className="text-gray-600 text-4xl sm:text-5xl hover:text-red-500 hover:scale-110 dark:text-white
                 dark:hover:text-red-500" 
                 />
               <span className="font-medium hover:text-red-400">Java</span>  
@@ -196,7 +196,7 @@ export default function Home() {
 
               <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-8">
               <DiPython 
-              className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
+              className="text-gray-600 text-4xl sm:text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
                 dark:hover:text-blue-500" 
                 />
               <span className="font-medium hover:text-blue-500">Python</span>  
@@ -204,7 +204,7 @@ export default function Home() {
 
               <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-8">
               <DiPostgresql 
-              className="text-gray-600 text-5xl hover:text-sky-700 hover:scale-110 dark:text-white
+              className="text-gray-600 text-4xl sm:text-5xl hover:text-sky-700 hover:scale-110 dark:text-white
                 dark:hover:text-sky-700" 
                 />
               <span className="font-medium hover:text-sky-700">PostgreSQL</span>  
@@ -212,7 +212,7 @@ export default function Home() {
               
               <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-8">
               <DiGit 
-              className="text-gray-600 text-5xl hover:text-red-400 hover:scale-110 dark:text-white
+              className="text-gray-600 text-4xl sm:text-5xl hover:text-red-400 hover:scale-110 dark:text-white
                 dark:hover:text-red-400" 
                 />
               <span className="font-medium hover:text-blue-400">Git</span>  
@@ -220,7 +220,7 @@ export default function Home() {
               
               <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-10">
               <SiSpringboot 
-              className="text-gray-600 text-4xl hover:text-lime-500 hover:scale-110 dark:text-white
+              className="text-gray-600 text-3xl sm:text-4xl hover:text-lime-500 hover:scale-110 dark:text-white
               dark:hover:text-lime-500" 
               />
               <span className="font-medium hover:text-lime-500">Spring Boot</span>  
@@ -228,7 +228,7 @@ export default function Home() {
 
               <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-10">
               <IoLogoFirebase 
-              className="text-gray-600 text-4xl hover:text-yellow-400 hover:scale-110 dark:text-white
+              className="text-gray-600 text-3xl sm:text-4xl hover:text-yellow-400 hover:scale-110 dark:text-white
                 dark:hover:text-yellow-500" 
                 />
               <span className="font-medium hover:text-yellow-400">Firebase</span>  
@@ -236,7 +236,7 @@ export default function Home() {
 
               <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-10">
               <SiPostman 
-              className="text-gray-600 text-4xl hover:text-orange-500 hover:scale-110 dark:text-white
+              className="text-gray-600 text-3xl sm:text-4xl hover:text-orange-500 hover:scale-110 dark:text-white
                 dark:hover:text-orange-500" 
                 />
               <span className="font-medium hover:text-orange-400">Postman</span>  
@@ -244,7 +244,7 @@ export default function Home() {
 
               <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-10">
               <SiTailwindcss 
-              className="text-gray-600 text-4xl hover:text-cyan-500 hover:scale-110 dark:text-white
+              className="text-gray-600 text-3xl sm:text-4xl hover:text-cyan-500 hover:scale-110 dark:text-white
                 dark:hover:text-cyan-500" 
                 />
               <span className="font-medium hover:text-cyan-400">Tailwind</span>  
