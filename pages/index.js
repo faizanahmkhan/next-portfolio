@@ -13,7 +13,7 @@ import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
 import { useState } from "react";
-import Resume from "./PDFFile";
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -40,7 +40,6 @@ export default function Home() {
                   dark:hover:from-orange-600 dark:hover:to-pink-600"
                   href= "https://drive.google.com/file/d/1HePbe5Go0os8pzI5kaoU90dwaOdp_aWT/view?usp=pdf"
                   target="_blank"
-                  rel="noopener noreferrer"
                 >
                   &nbsp; CV &nbsp;
                 </a>
@@ -152,10 +151,10 @@ export default function Home() {
         
               <div className="text-gray-600  dark:text-white flex flex-col justify-center items-center">
                 <DiCss3Full 
-                className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
-                dark:hover:text-blue-500 " />
+                className="text-gray-600 text-5xl hover:text-blue-700 hover:scale-110 dark:text-white
+                dark:hover:text-blue-700 " />
                 
-                <span className="font-medium hover:text-blue-400">CSS</span>
+                <span className="font-medium hover:text-blue-700">CSS</span>
               </div>
 
               <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center">
@@ -192,10 +191,10 @@ export default function Home() {
 
               <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-8">
               <DiPython 
-              className="text-gray-600 text-5xl hover:text-blue-600 hover:scale-110 dark:text-white
-                dark:hover:text-blue-600" 
+              className="text-gray-600 text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
+                dark:hover:text-blue-500" 
                 />
-              <span className="font-medium hover:text-blue-600">Python</span>  
+              <span className="font-medium hover:text-blue-500">Python</span>  
               </div>
 
               <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-8">
@@ -258,13 +257,15 @@ export default function Home() {
               Projects
             </h3>
           </div>
+
           <div className="xl:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg hover:shadow-inner p-10 rounded-xl my-10 
+              dark:shadow-gray-800">
               <Image src={design} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 text-black">
+              <h3 className="text-lg font-medium pt-8 pb-2 text-black dark:text-white">
                 WorldPin
               </h3>
-              <p className="py-2 text-black">
+              <p className="py-2 text-black dark:text-gray-300">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
                 fugiat corrupti dignissimos numquam. Totam, voluptate!
               </p>
@@ -273,12 +274,14 @@ export default function Home() {
               <p className="text-gray-800 py-1">React</p>
               <p className="text-gray-800 py-1">React</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 hover:shadow-inner
+              dark:shadow-gray-800">
               <Image src={code} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 text-black">
+              <h3 className="text-lg font-medium pt-8 pb-2 text-black dark:text-white">
                 TicTacToe
               </h3>
-              <p className="py-2 text-black">
+              <p className="py-2 text-black dark:text-gray-300">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
                 fugiat corrupti dignissimos numquam. Totam, voluptate!
               </p>
@@ -287,12 +290,14 @@ export default function Home() {
               <p className="text-gray-800 py-1">React</p>
               <p className="text-gray-800 py-1">React</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 hover:shadow-inner
+              dark:shadow-gray-800">
               <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 text-black">
+              <h3 className="text-lg font-medium pt-8 pb-2 text-black dark:text-white">
                 Music API
               </h3>
-              <p className="py-2 text-black">
+              <p className="py-2 text-black dark:text-gray-300">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
                 fugiat corrupti dignissimos numquam. Totam, voluptate!
               </p>
@@ -301,12 +306,14 @@ export default function Home() {
               <p className="text-gray-800 py-1">React</p>
               <p className="text-gray-800 py-1">React</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+
+            <div className="text-center shadow-lg hover:shadow-inner p-10 rounded-xl my-10 
+              dark:shadow-gray-800">
               <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 text-black">
+              <h3 className="text-lg font-medium pt-8 pb-2 text-black dark:text-white">
                 Ticket System
               </h3>
-              <p className="py-2 text-black">
+              <p className="py-2 text-black dark:text-gray-300">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
                 fugiat corrupti dignissimos numquam. Totam, voluptate!
               </p>
