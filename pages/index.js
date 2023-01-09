@@ -83,13 +83,13 @@ export default function Home() {
         <section>
 
           <div className="text-center sm:px-10 sm:my-10 my-8">
-            <h2 className="text-4xl sm:text-5xl py-3 text-teal-600 font-medium  dark:text-pink-400">
+            <h2 className="text-4xl md:text-5xl py-3 text-teal-600 font-medium  dark:text-pink-400">
               Hi, I'm Faizan Ahmed Khan
             </h2>
-            <h3 className="text-2xl pt-3 text-black sm:text-3xl dark:text-white">
+            <h3 className="text-2xl pt-3 text-black md:text-3xl dark:text-white">
               Full-Stack Software Developer
             </h3>
-            <p className="text py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-300">
+            <p className="py-5 leading-8 text-gray-800 md:text-xl dark:text-gray-300">
               I love exploring and creating <br />
               I'm a lifelong learner <br />
               <span className="">
@@ -125,15 +125,15 @@ export default function Home() {
 
         <section className="mt-10">
           <div>
-            <h3 className="text-center text-5xl font-medium py-10 text-black dark:text-white">
+            <h3 className="text-center text-4xl sm:text-5xl font-medium py-10 text-black dark:text-white">
               About Me
             </h3>
-            <h2 className="text-center text-3xl font-semibold text-teal-600 mt-6 mb-4 dark:text-pink-400">
+            <h2 className="text-center text-2xl sm:text-3xl font-semibold text-teal-600 mt-6 mb-4 dark:text-pink-400">
               Background
             </h2>
             <div className="flex">
-              <p className="w-1/5"></p>
-              <p className="text-center py-2 leading-8 text-gray-800 max-w-4xl w-3/5 dark:text-gray-300">
+              <p className="xl:w-1/5"></p>
+              <p className=" text-center px-4 sm:px-0 py-2 leading-8 sm:leading-10 text-gray-800 xl:w-3/5 dark:text-gray-300">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Eligendi cum ea temporibus,{" "}
                 <span className="text-teal-400"> facilis voluptates sint</span>{" "}
@@ -142,12 +142,12 @@ export default function Home() {
                 reprehenderit? Voluptate nobis, minima inventore repellendus
                 deserunt cupiditate obcaecati repellat.
               </p>
-              <p className="w-1/5"></p>
+              <p className="xl:w-1/5"></p>
             </div>
           </div>
 
           <div>
-            <h2 className="text-center text-3xl font-semibold text-teal-600 m-14 dark:text-pink-400">
+            <h2 className="text-center text-2xl sm:text-3xl font-semibold text-teal-600 m-14 dark:text-pink-400">
               Skills & Tools
             </h2>
 
