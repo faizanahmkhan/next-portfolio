@@ -27,7 +27,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+      <main className="bg-white px-2 sm:px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="">
           <nav className="pt-8 sm:py-10">
             <ul className=" space-y-8 flex-col place-items-center flex sm:space-y-0 sm:flex-row sm:justify-between  
@@ -81,7 +81,8 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="text-center px-10 sm:my-10 my-4">
+
+          <div className="text-center sm:px-10 sm:my-10 my-8">
             <h2 className="text-4xl sm:text-5xl py-3 text-teal-600 font-medium  dark:text-pink-400">
               Hi, I'm Faizan Ahmed Khan
             </h2>
@@ -96,7 +97,8 @@ export default function Home() {
               </span>
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 text-gray-600 dark:text-white">
+
+          <div className="text-4xl sm:text-5xl flex justify-center gap-16 text-gray-600 dark:text-white">
             <a
               href="https://www.linkedin.com/in/faizanahmkhan/"
               target="_blank"
@@ -110,13 +112,15 @@ export default function Home() {
               <AiFillMail className="hover:text-yellow-400 hover:scale-110 " />
             </a>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-6 sm:mt-20 overflow-hidden md:h-96 md:w-96">
+
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 sm:w-80 sm:h-80 mt-6 sm:mt-20 overflow-hidden md:h-96 md:w-96">
             {darkMode ? (
               <Image src={face3} layout="fill" objectFit="cover" />
             ) : (
               <Image src={face1} layout="fill" objectFit="cover" />
             )}
           </div>
+
         </section>
 
         <section className="mt-10">
