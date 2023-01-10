@@ -519,15 +519,9 @@ export default function Home() {
 
         <section className="pt-10 pb-7">
 
-          <div className="text-black dark:text-white font-semibold grid grid-cols-2">
+          <div className="text-black dark:text-white font-semibold grid sm:grid-cols-2">
 
-          <div className="text-left">  
-          Created by Faizan Ahmed Khan 🔥 2023
-          </div>  
-
-          
-          
-          <div className="text-right uppercase text-teal-600 dark:text-pink-400 
+          <div className="sm:text-right text-center uppercase text-teal-600 dark:text-pink-400 
               ">
               
               <a href="mailto:faizanahmkhan@gmail.com" className="hover:text-pink-400 dark:hover:text-teal-600">
@@ -540,6 +534,14 @@ export default function Home() {
 
 
           </div>
+          
+          <div className="sm:text-left text-center sm:order-first">  
+          Created by Faizan Ahmed Khan 🔥 2023
+          </div>  
+
+          
+          
+          
           
           </div>
 
