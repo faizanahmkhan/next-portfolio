@@ -1,18 +1,17 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 import { DiHtml5, DiCss3Full, DiReact, DiJava, DiPython, DiPostgresql, DiGit } from "react-icons/di";
 import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
 import { SiSpringboot, SiPostman, SiTailwindcss } from "react-icons/si"
 import face1 from "../public/face-1.jpg";
-import face2 from "../public/face-2.png";
 import face3 from "../public/face-4.png";
 import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
 import { useState } from "react";
+import worldpinimage from "../public/worldpin-image.png";
 
 
 export default function Home() {
@@ -38,7 +37,8 @@ export default function Home() {
                   bg-gradient-to-r  from-cyan-500 to-teal-500 font-bold text-white px-4 py-2 rounded-md 
                   hover:from-cyan-700 hover:to-teal-700
                   dark:bg-gradient-to-r dark:from-orange-400 dark:to-pink-400 
-                  dark:hover:from-orange-600 dark:hover:to-pink-600"
+                  dark:hover:from-orange-600 dark:hover:to-pink-600
+                  "
                   href= "https://drive.google.com/file/d/1HePbe5Go0os8pzI5kaoU90dwaOdp_aWT/view?usp=pdf"
                   target="_blank"
                 >
@@ -52,7 +52,7 @@ export default function Home() {
                   hover:from-cyan-700 hover:to-teal-700
                   dark:bg-gradient-to-r dark:from-orange-400 dark:to-pink-400 
                   dark:hover:from-orange-600 dark:hover:to-pink-600"
-                  href="#"
+                  href="#about-me"
                 >
                   About Me
                 </a>
@@ -64,7 +64,7 @@ export default function Home() {
                   hover:from-cyan-700 hover:to-teal-700
                   dark:bg-gradient-to-r dark:from-orange-400 dark:to-pink-400 
                   dark:hover:from-orange-600 dark:hover:to-pink-600"
-                  href="#"
+                  href="#projects"
                 >
                   Projects
                 </a>
@@ -73,7 +73,8 @@ export default function Home() {
               <div >
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl text-gray-800 hover:scale-125 dark:text-white"
+                  className=
+                  "cursor-pointer text-2xl text-gray-800 hover:scale-125 dark:text-white transition-all"
                 />
               </div>
             </ul>
@@ -98,7 +99,8 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="text-4xl sm:text-5xl flex justify-center gap-16 text-gray-600 dark:text-white">
+          <div className=
+          "text-4xl sm:text-5xl flex justify-center gap-16 text-gray-600 dark:text-white">
             <a
               href="https://www.linkedin.com/in/faizanahmkhan/"
               target="_blank"
@@ -125,7 +127,7 @@ export default function Home() {
 
         <section className="mt-10">
           <div>
-            <h3 className="text-center text-4xl md:text-5xl font-medium py-10 text-black dark:text-white">
+            <h3 id='about-me' className="text-center text-4xl md:text-5xl font-medium py-10 text-black dark:text-white">
               About Me
             </h3>
             <h2 className="text-center text-2xl md:text-3xl font-semibold text-teal-600 mt-6 mb-4 dark:text-pink-400">
@@ -133,7 +135,7 @@ export default function Home() {
             </h2>
             <div className="flex">
               <p className="xl:w-1/5"></p>
-              <p className=" text-center sm:text-xl px-4 sm:px-0 py-2 leading-8 sm:leading-10 text-gray-800 xl:w-3/5 dark:text-gray-300">
+              <p className=" text-center sm:text-lg px-4 sm:px-0 py-2 leading-8 sm:leading-10 text-gray-800 xl:w-3/5 dark:text-gray-300">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Eligendi cum ea temporibus,{" "}
                 <span className="text-teal-400"> facilis voluptates sint</span>{" "}
@@ -258,37 +260,69 @@ export default function Home() {
 
         <section className="pt-10">
           <div className="m-10">
-            <h3 className="text-center text-4xl md:text-5xl font-medium  text-black dark:text-white">
+            <h3 id="projects"
+            className="text-center text-4xl md:text-5xl font-medium  text-black dark:text-white">
               Projects
             </h3>
           </div>
 
-          <div className="xl:flex gap-10">
-            <div className="text-center shadow-lg hover:shadow-inner p-10 rounded-xl my-10 
-              dark:shadow-gray-800">
-              <Image src={design} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 text-black dark:text-white">
+          <div className="xl:flex gap-10 ">
+            <div className="text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
+              dark:shadow-gray-800 w-1/4">
+                
+              <Image className="hover:scale-150 rounded-md hover:-translate-y-10 transition-all" 
+              src={worldpinimage} layout='responsive' />
+              
+              <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
                 WorldPin
               </h3>
-              <p className="py-2 text-black dark:text-gray-300">
+              <div>
+                <ul className="flex flex-row justify-center gap-2  px-1 py-1">
+                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base">
+                    &nbsp;&nbsp;React&nbsp;&nbsp;
+                  </li>
+                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base">
+                    &nbsp;&nbsp;Java&nbsp;&nbsp;
+                  </li>
+                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base">
+                    &nbsp;&nbsp;PostgreSQL&nbsp;&nbsp;
+                  </li>
+                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base">
+                    &nbsp;&nbsp;Firebase&nbsp;&nbsp;
+                  </li>
+                </ul>
+              </div>
+              <p className="py-5 text-black dark:text-gray-300">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                fugiat corrupti dignissimos numquam. Totam, voluptate!
+                fugiat corrupti dignissimos numquam. Totam, voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique commodi libero maxime quis necessitatibus, sint ab quos dolore illum eveniet.
               </p>
-              <h4 className="py-4 text-teal-400">Design Tools I used</h4>
-              <p className="text-gray-800 py-1">React</p>
-              <p className="text-gray-800 py-1">React</p>
-              <p className="text-gray-800 py-1">React</p>
+              <div>
+                <ul className="flex flex-row justify-center gap-4  px-1 py-1">
+                  <li className="text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                    outline outline-2 outline-gray-800 hover:outline-gray-900 rounded-full">
+                    &nbsp;&nbsp;Live Demo {'>'}&nbsp;&nbsp;
+                  </li>
+                  <li className="text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                    outline outline-2 outline-gray-800 hover:outline-gray-900 rounded-full">
+                    &nbsp;&nbsp;GitHub {'>'}&nbsp;&nbsp;
+                  </li>
+                </ul>
+                </div>
             </div>
 
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 hover:shadow-inner
-              dark:shadow-gray-800">
+            <div className="text-center shadow-xl p-10 rounded-xl my-10 hover:shadow-inner
+              dark:shadow-gray-800 w-1/4">
               <Image src={code} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 text-black dark:text-white">
                 TicTacToe
               </h3>
               <p className="py-2 text-black dark:text-gray-300">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                fugiat corrupti dignissimos numquam. Totam, voluptate!
+                fugiat corrupti dignissimos numquam. Totam, voluptate! lorem20
               </p>
               <h4 className="py-4 text-teal-400">Design Tools I used</h4>
               <p className="text-gray-800 py-1">React</p>
@@ -296,8 +330,8 @@ export default function Home() {
               <p className="text-gray-800 py-1">React</p>
             </div>
 
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 hover:shadow-inner
-              dark:shadow-gray-800">
+            <div className="text-center shadow-xl p-10 rounded-xl my-10 hover:shadow-inner
+              dark:shadow-gray-800 w-1/4">
               <Image src={consulting} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 text-black dark:text-white">
                 Music API
@@ -312,8 +346,8 @@ export default function Home() {
               <p className="text-gray-800 py-1">React</p>
             </div>
 
-            <div className="text-center shadow-lg hover:shadow-inner p-10 rounded-xl my-10 
-              dark:shadow-gray-800">
+            <div className="text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
+              dark:shadow-gray-800 w-1/4">
               <Image src={consulting} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 text-black dark:text-white">
                 Ticket System
