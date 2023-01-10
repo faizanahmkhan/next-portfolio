@@ -173,7 +173,7 @@ export default function Home() {
             </h2>
 
 
-            <div className="grid grid-cols-3 sm:grid-cols-4 lg:max:xl:px-30 xl:px-56 transition-all duration-500">
+            <div className="grid grid-cols-3 sm:grid-cols-4 lg:max:xl:px-30 2xl:max-3xl:px-36 3xl:px-56 transition-all duration-500">
         
               <div className="text-blue-700 
               lg:text-gray-600  lg:dark:text-white flex flex-col justify-center items-center">
