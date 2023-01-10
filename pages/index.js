@@ -266,11 +266,11 @@ export default function Home() {
             </h3>
           </div>
 
-          <div className="xl:flex gap-10 ">
+          <div className="flex flex-row-4  bg-pink-200">
             <div className="text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
-              dark:shadow-gray-800 w-1/4">
+              dark:shadow-gray-800 basis-1/4">
                 
-              <Image className="hover:scale-150 rounded-md hover:-translate-y-10 transition-all" 
+              <Image className="hover:scale-150 rounded-md hover:-translate-y-10 transition-all duration-700 ease-out" 
               src={worldpinimage} layout='responsive' />
               
               <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
@@ -279,19 +279,23 @@ export default function Home() {
               <div>
                 <ul className="flex flex-row justify-center gap-2  px-1 py-1">
                   <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
-                    outline outline-2 outline-teal-600 rounded-lg text-base">
+                    outline outline-2 outline-teal-600 rounded-lg text-base
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
                     &nbsp;&nbsp;React&nbsp;&nbsp;
                   </li>
                   <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
-                    outline outline-2 outline-teal-600 rounded-lg text-base">
+                    outline outline-2 outline-teal-600 rounded-lg text-base
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
                     &nbsp;&nbsp;Java&nbsp;&nbsp;
                   </li>
                   <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
-                    outline outline-2 outline-teal-600 rounded-lg text-base">
+                    outline outline-2 outline-teal-600 rounded-lg text-base
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
                     &nbsp;&nbsp;PostgreSQL&nbsp;&nbsp;
                   </li>
                   <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
-                    outline outline-2 outline-teal-600 rounded-lg text-base">
+                    outline outline-2 outline-teal-600 rounded-lg text-base
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
                     &nbsp;&nbsp;Firebase&nbsp;&nbsp;
                   </li>
                 </ul>
@@ -303,64 +307,194 @@ export default function Home() {
               <div>
                 <ul className="flex flex-row justify-center gap-4  px-1 py-1">
                   <li className="text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
-                    outline outline-2 outline-gray-800 hover:outline-gray-900 rounded-full">
+                    outline outline-2 hover:outline-0 rounded-full transition-all duration-300
+                    dark:hover:bg-gray-800 dark:hover:outline-gray-800 hover:scale-95 ">
                     &nbsp;&nbsp;Live Demo {'>'}&nbsp;&nbsp;
                   </li>
                   <li className="text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
-                    outline outline-2 outline-gray-800 hover:outline-gray-900 rounded-full">
+                    outline outline-2  hover:outline-0 rounded-full transition-all duration-300
+                    dark:hover:bg-gray-800 dark:hover:outline-gray-800 hover:scale-95 ">
+
+                    <a href='https://github.com/faizanahmkhan/worldpin_app' target='_blank'  > 
                     &nbsp;&nbsp;GitHub {'>'}&nbsp;&nbsp;
+                    </a> 
+
+                  </li>
+                </ul>
+                </div>
+            </div>
+            <div className="text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
+              dark:shadow-gray-800 basis-1/4">
+                
+              <Image className="hover:scale-150 rounded-md hover:-translate-y-10 transition-all duration-700 ease-out" 
+              src={worldpinimage} layout='responsive' />
+              
+              <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
+                WorldPin
+              </h3>
+              <div>
+                <ul className="flex flex-row justify-center gap-2  px-1 py-1">
+                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
+                    &nbsp;&nbsp;React&nbsp;&nbsp;
+                  </li>
+                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
+                    &nbsp;&nbsp;Java&nbsp;&nbsp;
+                  </li>
+                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
+                    &nbsp;&nbsp;PostgreSQL&nbsp;&nbsp;
+                  </li>
+                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
+                    &nbsp;&nbsp;Firebase&nbsp;&nbsp;
+                  </li>
+                </ul>
+              </div>
+              <p className="py-5 text-black dark:text-gray-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                fugiat corrupti dignissimos numquam. Totam, voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique commodi libero maxime quis necessitatibus, sint ab quos dolore illum eveniet.
+              </p>
+              <div>
+                <ul className="flex flex-row justify-center gap-4  px-1 py-1">
+                  <li className="text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                    outline outline-2 hover:outline-0 rounded-full transition-all duration-300
+                    dark:hover:bg-gray-800 dark:hover:outline-gray-800 hover:scale-95 ">
+                    &nbsp;&nbsp;Live Demo {'>'}&nbsp;&nbsp;
+                  </li>
+                  <li className="text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                    outline outline-2  hover:outline-0 rounded-full transition-all duration-300
+                    dark:hover:bg-gray-800 dark:hover:outline-gray-800 hover:scale-95 ">
+
+                    <a href='https://github.com/faizanahmkhan/worldpin_app' target='_blank'  > 
+                    &nbsp;&nbsp;GitHub {'>'}&nbsp;&nbsp;
+                    </a> 
+
                   </li>
                 </ul>
                 </div>
             </div>
 
-            <div className="text-center shadow-xl p-10 rounded-xl my-10 hover:shadow-inner
-              dark:shadow-gray-800 w-1/4">
-              <Image src={code} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 text-black dark:text-white">
-                TicTacToe
+            <div className="text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
+              dark:shadow-gray-800 basis-1/4">
+                
+              <Image className="hover:scale-150 rounded-md hover:-translate-y-10 transition-all duration-700 ease-out" 
+              src={worldpinimage} layout='responsive' />
+              
+              <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
+                WorldPin
               </h3>
-              <p className="py-2 text-black dark:text-gray-300">
+              <div>
+                <ul className="flex flex-row justify-center gap-2  px-1 py-1">
+                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
+                    &nbsp;&nbsp;React&nbsp;&nbsp;
+                  </li>
+                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
+                    &nbsp;&nbsp;Java&nbsp;&nbsp;
+                  </li>
+                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
+                    &nbsp;&nbsp;PostgreSQL&nbsp;&nbsp;
+                  </li>
+                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
+                    &nbsp;&nbsp;Firebase&nbsp;&nbsp;
+                  </li>
+                </ul>
+              </div>
+              <p className="py-5 text-black dark:text-gray-300">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                fugiat corrupti dignissimos numquam. Totam, voluptate! lorem20
+                fugiat corrupti dignissimos numquam. Totam, voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique commodi libero maxime quis necessitatibus, sint ab quos dolore illum eveniet.
               </p>
-              <h4 className="py-4 text-teal-400">Design Tools I used</h4>
-              <p className="text-gray-800 py-1">React</p>
-              <p className="text-gray-800 py-1">React</p>
-              <p className="text-gray-800 py-1">React</p>
-            </div>
+              <div>
+                <ul className="flex flex-row justify-center gap-4  px-1 py-1">
+                  <li className="text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                    outline outline-2 hover:outline-0 rounded-full transition-all duration-300
+                    dark:hover:bg-gray-800 dark:hover:outline-gray-800 hover:scale-95 ">
+                    &nbsp;&nbsp;Live Demo {'>'}&nbsp;&nbsp;
+                  </li>
+                  <li className="text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                    outline outline-2  hover:outline-0 rounded-full transition-all duration-300
+                    dark:hover:bg-gray-800 dark:hover:outline-gray-800 hover:scale-95 ">
 
-            <div className="text-center shadow-xl p-10 rounded-xl my-10 hover:shadow-inner
-              dark:shadow-gray-800 w-1/4">
-              <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 text-black dark:text-white">
-                Music API
-              </h3>
-              <p className="py-2 text-black dark:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                fugiat corrupti dignissimos numquam. Totam, voluptate!
-              </p>
-              <h4 className="py-4 text-teal-400">Design Tools I used</h4>
-              <p className="text-gray-800 py-1">React</p>
-              <p className="text-gray-800 py-1">React</p>
-              <p className="text-gray-800 py-1">React</p>
+                    <a href='https://github.com/faizanahmkhan/worldpin_app' target='_blank'  > 
+                    &nbsp;&nbsp;GitHub {'>'}&nbsp;&nbsp;
+                    </a> 
+
+                  </li>
+                </ul>
+                </div>
             </div>
 
             <div className="text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
-              dark:shadow-gray-800 w-1/4">
-              <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 text-black dark:text-white">
-                Ticket System
+              dark:shadow-gray-800 basis-1/4">
+                
+              <Image className="hover:scale-150 rounded-md hover:-translate-y-10 transition-all duration-700 ease-out" 
+              src={worldpinimage} layout='responsive' />
+              
+              <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
+                WorldPin
               </h3>
-              <p className="py-2 text-black dark:text-gray-300">
+              <div>
+                <ul className="flex flex-row justify-center gap-2  px-1 py-1">
+                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
+                    &nbsp;&nbsp;React&nbsp;&nbsp;
+                  </li>
+                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
+                    &nbsp;&nbsp;Java&nbsp;&nbsp;
+                  </li>
+                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
+                    &nbsp;&nbsp;PostgreSQL&nbsp;&nbsp;
+                  </li>
+                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
+                    &nbsp;&nbsp;Firebase&nbsp;&nbsp;
+                  </li>
+                </ul>
+              </div>
+              <p className="py-5 text-black dark:text-gray-300">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                fugiat corrupti dignissimos numquam. Totam, voluptate!
+                fugiat corrupti dignissimos numquam. Totam, voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique commodi libero maxime quis necessitatibus, sint ab quos dolore illum eveniet.
               </p>
-              <h4 className="py-4 text-teal-400">Design Tools I used</h4>
-              <p className="text-gray-800 py-1">React</p>
-              <p className="text-gray-800 py-1">React</p>
-              <p className="text-gray-800 py-1">React</p>
+              <div>
+                <ul className="flex flex-row justify-center gap-4  px-1 py-1">
+                  <li className="text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                    outline outline-2 hover:outline-0 rounded-full transition-all duration-300
+                    dark:hover:bg-gray-800 dark:hover:outline-gray-800 hover:scale-95 ">
+                    &nbsp;&nbsp;Live Demo {'>'}&nbsp;&nbsp;
+                  </li>
+                  <li className="text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                    outline outline-2  hover:outline-0 rounded-full transition-all duration-300
+                    dark:hover:bg-gray-800 dark:hover:outline-gray-800 hover:scale-95 ">
+
+                    <a href='https://github.com/faizanahmkhan/worldpin_app' target='_blank'  > 
+                    &nbsp;&nbsp;GitHub {'>'}&nbsp;&nbsp;
+                    </a> 
+
+                  </li>
+                </ul>
+                </div>
             </div>
+
+            
           </div>
         </section>
       </main>
