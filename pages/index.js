@@ -26,7 +26,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-2 sm:px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+      <main className="bg-white px-2 sm:px-10 md:px-20 lg:px-40 dark:bg-gray-900 scroll-smooth">
         <section className="">
           <nav className="pt-8 sm:py-10">
             <ul className=" space-y-8 flex-col place-items-center flex sm:space-y-0 sm:flex-row sm:justify-between  
@@ -270,11 +270,11 @@ export default function Home() {
 
 
 
-            <div className="text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
-              dark:shadow-gray-800
-              ">
+            <div className="text-center shadow-xl hover:shadow-inner p-10  rounded-xl my-10 
+              dark:shadow-gray-800">
                 
-              <Image className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out" 
+              <Image className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out
+              touch-pinch-zoom md:touch-none" 
               src={worldpinimage} layout='responsive' />
               
               <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
@@ -310,7 +310,8 @@ export default function Home() {
                 fugiat corrupti dignissimos numquam. Totam, voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique commodi libero maxime quis necessitatibus, sint ab quos dolore illum eveniet.
               </p>
               <div>
-                <ul className="grid grid-cols-2 align-center gap-1 sm:gap-4 sm:px-1 py-1 ">
+                <ul className="grid grid-cols-2 align-center gap-1 sm:gap-4 sm:px-1 py-1 
+                  2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1">
                   <li className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800">
@@ -334,7 +335,8 @@ export default function Home() {
               dark:shadow-gray-800
               ">
                 
-              <Image className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out" 
+              <Image className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out
+              touch-pinch-zoom md:touch-none" 
               src={worldpinimage} layout='responsive' />
               
               <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
@@ -370,7 +372,8 @@ export default function Home() {
                 fugiat corrupti dignissimos numquam. Totam, voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique commodi libero maxime quis necessitatibus, sint ab quos dolore illum eveniet.
               </p>
               <div>
-                <ul className="grid grid-cols-2 align-center gap-1 sm:gap-4 sm:px-1 py-1 ">
+                <ul className="grid grid-cols-2 align-center gap-1 sm:gap-4 sm:px-1 py-1 
+                2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1">
                   <li className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800">
@@ -394,7 +397,8 @@ export default function Home() {
               dark:shadow-gray-800
               ">
                 
-              <Image className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out" 
+              <Image className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out
+              touch-pinch-zoom md:touch-none" 
               src={worldpinimage} layout='responsive' />
               
               <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
@@ -430,7 +434,8 @@ export default function Home() {
                 fugiat corrupti dignissimos numquam. Totam, voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique commodi libero maxime quis necessitatibus, sint ab quos dolore illum eveniet.
               </p>
               <div>
-                <ul className="grid grid-cols-2 align-center gap-1 sm:gap-4 sm:px-1 py-1 ">
+                <ul className="grid grid-cols-2 align-center gap-1 sm:gap-4 sm:px-1 py-1 
+                2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1">
                   <li className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800">
@@ -454,7 +459,8 @@ export default function Home() {
               dark:shadow-gray-800
               ">
                 
-              <Image className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out" 
+              <Image className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out
+              touch-pinch-zoom md:touch-none" 
               src={worldpinimage} layout='responsive' />
               
               <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
@@ -490,30 +496,41 @@ export default function Home() {
                 fugiat corrupti dignissimos numquam. Totam, voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique commodi libero maxime quis necessitatibus, sint ab quos dolore illum eveniet.
               </p>
               <div>
-                <ul className="grid grid-cols-2 align-center gap-1 sm:gap-4 sm:px-1 py-1 ">
-                  <li className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                <ul className="grid grid-cols-2 align-center gap-1 sm:gap-4 sm:px-1 py-1 
+                2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1">
+                  <li className=" xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800">
-                    &nbsp;&nbsp;Live Demo {'>'}&nbsp;&nbsp;
+                    Live Demo {'>'}
                   </li>
-                  <li className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                  <li className=" xl:text-lg  text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2  hover:outline-0 rounded-full transition-all duration-300
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800">
 
                     <a href='https://github.com/faizanahmkhan/worldpin_app' target='_blank'  > 
-                    &nbsp;&nbsp;GitHub {'>'}&nbsp;&nbsp;
+                    GitHub {'>'}
                     </a> 
 
                   </li>
                 </ul>
                 </div>
             </div>
-
-            
 
             
           </div>
         </section>
+
+        <section className="pt-10">
+          <div className="m-10">
+            <h3 id="projects"
+            className="text-center text-4xl md:text-5xl font-medium  text-black dark:text-white">
+              Contact Me
+            </h3>
+          </div>
+              
+
+        </section>
+
       </main>
     </div>
   );
