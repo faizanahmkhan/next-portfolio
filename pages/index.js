@@ -146,15 +146,23 @@ export default function Home() {
             </h2>
             <div className="flex">
               <p className="xl:w-1/5"></p>
-              <p className=" text-center sm:text-lg px-4 sm:px-0 py-2 leading-8 sm:leading-10 text-gray-800 xl:w-3/5 dark:text-gray-300">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Eligendi cum ea temporibus,{" "}
-                <span className="text-teal-400"> facilis voluptates sint</span>{" "}
-                eum voluptatibus dolorum, doloremque iure maxime quia obcaecati
-                dolorem eius modi. Laborum corporis molestias laboriosam
-                reprehenderit? Voluptate nobis, minima inventore repellendus
-                deserunt cupiditate obcaecati repellat.
+              <div className="xl:w-3/5 text-center sm:text-lg px-4 sm:px-0 py-2 leading sm:leading-8 text-gray-800  dark:text-gray-300 ">
+              <p>
+              Since graduating in Chemical & Nuclear Engineering, I have set my sights on a career in the software industry. Throughout my studies, I've honed my problem-solving skills and had the opportunity to work in teams on group projects. Recently, I gained hands-on experience through a bootcamp where I've learned to build both the front-end and back-end of web applications.
+              
+              
               </p>
+              <p className="pt-3">I'm looking for an opportunity to take on complex challenges and continue to learn and grow in a dynamic and collaborative environment. <span className="font-semibold">I'm ready to roll up my sleeves and make an impact as a part of a team dedicated to creating innovative solutions.
+              </span>
+              </p>
+              <a href= "https://drive.google.com/file/d/1HePbe5Go0os8pzI5kaoU90dwaOdp_aWT/view?usp=pdf"
+              target="_blank">
+              <p className="pt-6 font-bold hover:scale-105 transition-all text-xl"
+              >
+                View My CV {'>'}
+              </p>
+              </a>
+              </div>
               <p className="xl:w-1/5"></p>
             </div>
           </div>
@@ -167,100 +175,105 @@ export default function Home() {
 
             <div className="grid grid-cols-3 sm:grid-cols-4 lg:max:xl:px-30 xl:px-56 transition-all duration-500">
         
-              <div className="text-gray-600  dark:text-white flex flex-col justify-center items-center">
+              <div className="text-blue-700 
+              lg:text-gray-600  lg:dark:text-white flex flex-col justify-center items-center">
                 <DiCss3Full 
-                className="text-gray-600 text-4xl sm:text-5xl hover:text-blue-700 hover:scale-110 dark:text-white
-                dark:hover:text-blue-700 " />
+                className="text-4xl sm:text-5xl hover:text-blue-700 hover:scale-110  dark:hover:text-blue-700 " />
                 
                 <span className="font-medium hover:text-blue-700">CSS</span>
               </div>
 
-              <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center">
+              <div className="text-orange-400
+              lg:text-gray-600 lg:dark:text-white flex flex-col justify-center items-center">
               <DiHtml5 
-              className="text-gray-600 text-4xl sm:text-5xl hover:text-orange-400 hover:scale-110 dark:text-white
-                 dark:hover:text-orange-400" 
-                />
+              className="text-4xl sm:text-5xl hover:text-orange-400 hover:scale-110 lg:dark:text-white dark:hover:text-orange-400" />
+
               <span className="font-medium hover:text-orange-400">HTML</span>  
               </div>
 
-              <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center">
+              <div className="text-yellow-500 lg:text-gray-600 lg:dark:text-white 
+              flex flex-col justify-center items-center">
               <IoLogoJavascript 
-              className="text-gray-600 text-4xl sm:text-5xl hover:text-yellow-500 hover:scale-110 dark:text-white
+              className="text-4xl sm:text-5xl lg:hover:text-yellow-500 hover:scale-110 
                 dark:hover:text-yellow-500 " 
                 />
               <span className="font-medium hover:text-yellow-400 text-center">JavaScript</span>  
               </div>
 
-              <div className="text-gray-600 dark:text-white flex flex-col justify-end items-center">
+              <div className="text-blue-300 lg:text-gray-600 lg:dark:text-white 
+              flex flex-col justify-end items-center">
               <DiReact 
-              className="text-gray-600 text-4xl sm:text-5xl hover:text-blue-300 hover:scale-110 dark:text-white
+              className="text-4xl sm:text-5xl hover:text-blue-300 hover:scale-110 
                 dark:hover:text-blue-300" 
                 />
               <span className="font-medium hover:text-blue-400">React</span>  
               </div>
 
-              <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-8">
+              <div className="text-red-500 lg:text-gray-600 lg:dark:text-white flex flex-col justify-center items-center mt-8">
               <DiJava 
-              className="text-gray-600 text-4xl sm:text-5xl hover:text-red-500 hover:scale-110 dark:text-white
+              className="text-4xl sm:text-5xl hover:text-red-500 hover:scale-110 
                 dark:hover:text-red-500" 
                 />
-              <span className="font-medium hover:text-red-400">Java</span>  
+              <span className="font-medium hover:text-red-500">Java</span>  
               </div>
 
-              <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-8">
+              <div className="text-blue-500 lg:text-gray-600 lg:dark:text-white 
+              flex flex-col justify-center items-center mt-8">
               <DiPython 
-              className="text-gray-600 text-4xl sm:text-5xl hover:text-blue-500 hover:scale-110 dark:text-white
+              className="text-4xl sm:text-5xl hover:text-blue-500 hover:scale-110 
                 dark:hover:text-blue-500" 
                 />
               <span className="font-medium hover:text-blue-500">Python</span>  
               </div>
 
-              <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-8">
+              <div className="text-sky-700 lg:text-gray-600 lg:dark:text-white 
+              flex flex-col justify-center items-center mt-8">
               <DiPostgresql 
-              className="text-gray-600 text-4xl sm:text-5xl hover:text-sky-700 hover:scale-110 dark:text-white
+              className=" text-4xl sm:text-5xl hover:text-sky-700 hover:scale-110 
                 dark:hover:text-sky-700" 
                 />
               <span className="font-medium hover:text-sky-700">PostgreSQL</span>  
               </div>
               
-              <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-8">
+              <div className="text-red-400 lg:text-gray-600 lg:dark:text-white 
+              flex flex-col justify-center items-center mt-8">
               <DiGit 
-              className="text-gray-600 text-4xl sm:text-5xl hover:text-red-400 hover:scale-110 dark:text-white
+              className="text-4xl sm:text-5xl hover:text-red-400 hover:scale-110 
                 dark:hover:text-red-400" 
                 />
               <span className="font-medium hover:text-blue-400">Git</span>  
               </div>
               
-              <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-10">
+              <div className="text-lime-500 lg:text-gray-600 lg:dark:text-white flex flex-col justify-center items-center mt-10">
               <SiSpringboot 
-              className="text-gray-600 text-3xl sm:text-4xl hover:text-lime-500 hover:scale-110 dark:text-white
+              className=" text-3xl sm:text-4xl hover:text-lime-500 hover:scale-110
               dark:hover:text-lime-500" 
               />
               <span className="font-medium hover:text-lime-500">Spring Boot</span>  
               </div>
 
-              <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-10">
+              <div className="text-yellow-500 lg:text-gray-600 lg:dark:text-white flex flex-col justify-center items-center mt-10">
               <IoLogoFirebase 
-              className="text-gray-600 text-3xl sm:text-4xl hover:text-yellow-400 hover:scale-110 dark:text-white
+              className=" text-3xl sm:text-4xl hover:text-yellow-500 hover:scale-110 
                 dark:hover:text-yellow-500" 
                 />
-              <span className="font-medium hover:text-yellow-400">Firebase</span>  
+              <span className="font-medium hover:text-yellow-500">Firebase</span>  
               </div>
 
-              <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-10">
+              <div className="text-orange-500 lg:text-gray-600 lg:dark:text-white flex flex-col justify-center items-center mt-10">
               <SiPostman 
-              className="text-gray-600 text-3xl sm:text-4xl hover:text-orange-500 hover:scale-110 dark:text-white
+              className="text-3xl sm:text-4xl hover:text-orange-500 hover:scale-110 
                 dark:hover:text-orange-500" 
                 />
               <span className="font-medium hover:text-orange-400">Postman</span>  
               </div>
 
-              <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center mt-10">
+              <div className="text-cyan-500 lg:text-gray-600 lg:dark:text-white flex flex-col justify-center items-center mt-10">
               <SiTailwindcss 
-              className="text-gray-600 text-3xl sm:text-4xl hover:text-cyan-500 hover:scale-110 dark:text-white
+              className=" text-3xl sm:text-4xl hover:text-cyan-500 hover:scale-110 
                 dark:hover:text-cyan-500" 
                 />
-              <span className="font-medium hover:text-cyan-400">Tailwind</span>  
+              <span className="font-medium hover:text-cyan-500">Tailwind</span>  
               </div>
               
             </div>
@@ -478,7 +491,7 @@ export default function Home() {
                 Ticketing System <span className="italic text-sm">{'('}Coming Soon{')'}</span>
               </h3>
               <div>
-                <ul className="grid grid-cols-2 content-center gap-2 px-1 py-1 blur-sm ">
+                <ul className="grid grid-cols-2 content-center gap-2 px-1 py-1 blur-sm">
                   <li className="text-teal-600 font-semibold   
                     outline outline-2 outline-teal-600 rounded-lg text-base 
                     dark:text-pink-400 dark:outline-pink-400 
@@ -488,17 +501,17 @@ export default function Home() {
                   <li className="text-teal-600 font-semibold  
                     outline outline-2 outline-teal-600 rounded-lg text-base
                     dark:text-pink-400 dark:outline-pink-400 ">
-                    Java
+                    MongoDB
                   </li>
                   <li className="text-teal-600 font-semibold 
                     outline outline-2 outline-teal-600 rounded-lg text-base
                     dark:text-pink-400 dark:outline-pink-400 ">
-                    PostgreSQL
+                    Express
                   </li>
                   <li className="text-teal-600 font-semibold  
                     outline outline-2 outline-teal-600 rounded-lg text-base
                     dark:text-pink-400 dark:outline-pink-400 ">
-                    Firebase
+                    Node
                   </li>
                 </ul>
               </div>
