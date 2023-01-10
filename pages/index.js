@@ -266,39 +266,42 @@ export default function Home() {
             </h3>
           </div>
 
-          <div className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-12 bg-pink-200">
+          <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 gap-12">
+
+
 
             <div className="text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
-              dark:shadow-gray-800 basis-1/4
+              dark:shadow-gray-800
               ">
                 
-              <Image className="hover:scale-150 rounded-md hover:-translate-y-10 transition-all duration-700 ease-out" 
+              <Image className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out" 
               src={worldpinimage} layout='responsive' />
               
               <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
                 WorldPin
               </h3>
               <div>
-                <ul className="flex flex-row justify-center gap-2  px-1 py-1">
+                <ul className="grid grid-cols-2 content-center gap-2 px-1 py-1 ">
                   <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
-                    outline outline-2 outline-teal-600 rounded-lg text-base
-                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
-                    &nbsp;&nbsp;React&nbsp;&nbsp;
+                    outline outline-2 outline-teal-600 rounded-lg text-base 
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white
+                    ">
+                    React
                   </li>
                   <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
                     outline outline-2 outline-teal-600 rounded-lg text-base
                     dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
-                    &nbsp;&nbsp;Java&nbsp;&nbsp;
+                    Java
                   </li>
                   <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
                     outline outline-2 outline-teal-600 rounded-lg text-base
                     dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
-                    &nbsp;&nbsp;PostgreSQL&nbsp;&nbsp;
+                    PostgreSQL
                   </li>
                   <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
                     outline outline-2 outline-teal-600 rounded-lg text-base
                     dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
-                    &nbsp;&nbsp;Firebase&nbsp;&nbsp;
+                    Firebase
                   </li>
                 </ul>
               </div>
@@ -307,15 +310,15 @@ export default function Home() {
                 fugiat corrupti dignissimos numquam. Totam, voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique commodi libero maxime quis necessitatibus, sint ab quos dolore illum eveniet.
               </p>
               <div>
-                <ul className="flex flex-row justify-center gap-4  px-1 py-1">
-                  <li className="text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                <ul className="grid grid-cols-2 align-center gap-1 sm:gap-4 sm:px-1 py-1 ">
+                  <li className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300
-                    dark:hover:bg-gray-800 dark:hover:outline-gray-800 hover:scale-95 ">
+                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800">
                     &nbsp;&nbsp;Live Demo {'>'}&nbsp;&nbsp;
                   </li>
-                  <li className="text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                  <li className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2  hover:outline-0 rounded-full transition-all duration-300
-                    dark:hover:bg-gray-800 dark:hover:outline-gray-800 hover:scale-95 ">
+                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800">
 
                     <a href='https://github.com/faizanahmkhan/worldpin_app' target='_blank'  > 
                     &nbsp;&nbsp;GitHub {'>'}&nbsp;&nbsp;
@@ -325,37 +328,40 @@ export default function Home() {
                 </ul>
                 </div>
             </div>
+
 
             <div className="text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
-              dark:shadow-gray-800 basis-1/4">
+              dark:shadow-gray-800
+              ">
                 
-              <Image className="hover:scale-150 rounded-md hover:-translate-y-10 transition-all duration-700 ease-out" 
+              <Image className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out" 
               src={worldpinimage} layout='responsive' />
               
               <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
                 WorldPin
               </h3>
               <div>
-                <ul className="flex flex-row justify-center gap-2  px-1 py-1">
+                <ul className="grid grid-cols-2 content-center gap-2 px-1 py-1 ">
                   <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
-                    outline outline-2 outline-teal-600 rounded-lg text-base
-                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
-                    &nbsp;&nbsp;React&nbsp;&nbsp;
+                    outline outline-2 outline-teal-600 rounded-lg text-base 
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white
+                    ">
+                    React
                   </li>
                   <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
                     outline outline-2 outline-teal-600 rounded-lg text-base
                     dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
-                    &nbsp;&nbsp;Java&nbsp;&nbsp;
+                    Java
                   </li>
                   <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
                     outline outline-2 outline-teal-600 rounded-lg text-base
                     dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
-                    &nbsp;&nbsp;PostgreSQL&nbsp;&nbsp;
+                    PostgreSQL
                   </li>
                   <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
                     outline outline-2 outline-teal-600 rounded-lg text-base
                     dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
-                    &nbsp;&nbsp;Firebase&nbsp;&nbsp;
+                    Firebase
                   </li>
                 </ul>
               </div>
@@ -364,15 +370,15 @@ export default function Home() {
                 fugiat corrupti dignissimos numquam. Totam, voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique commodi libero maxime quis necessitatibus, sint ab quos dolore illum eveniet.
               </p>
               <div>
-                <ul className="flex flex-row justify-center gap-4  px-1 py-1">
-                  <li className="text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                <ul className="grid grid-cols-2 align-center gap-1 sm:gap-4 sm:px-1 py-1 ">
+                  <li className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300
-                    dark:hover:bg-gray-800 dark:hover:outline-gray-800 hover:scale-95 ">
+                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800">
                     &nbsp;&nbsp;Live Demo {'>'}&nbsp;&nbsp;
                   </li>
-                  <li className="text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                  <li className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2  hover:outline-0 rounded-full transition-all duration-300
-                    dark:hover:bg-gray-800 dark:hover:outline-gray-800 hover:scale-95 ">
+                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800">
 
                     <a href='https://github.com/faizanahmkhan/worldpin_app' target='_blank'  > 
                     &nbsp;&nbsp;GitHub {'>'}&nbsp;&nbsp;
@@ -382,37 +388,40 @@ export default function Home() {
                 </ul>
                 </div>
             </div>
+
 
             <div className="text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
-              dark:shadow-gray-800 basis-1/4">
+              dark:shadow-gray-800
+              ">
                 
-              <Image className="hover:scale-150 rounded-md hover:-translate-y-10 transition-all duration-700 ease-out" 
+              <Image className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out" 
               src={worldpinimage} layout='responsive' />
               
               <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
                 WorldPin
               </h3>
               <div>
-                <ul className="flex flex-row justify-center gap-2  px-1 py-1">
+                <ul className="grid grid-cols-2 content-center gap-2 px-1 py-1 ">
                   <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
-                    outline outline-2 outline-teal-600 rounded-lg text-base
-                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
-                    &nbsp;&nbsp;React&nbsp;&nbsp;
+                    outline outline-2 outline-teal-600 rounded-lg text-base 
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white
+                    ">
+                    React
                   </li>
                   <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
                     outline outline-2 outline-teal-600 rounded-lg text-base
                     dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
-                    &nbsp;&nbsp;Java&nbsp;&nbsp;
+                    Java
                   </li>
                   <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
                     outline outline-2 outline-teal-600 rounded-lg text-base
                     dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
-                    &nbsp;&nbsp;PostgreSQL&nbsp;&nbsp;
+                    PostgreSQL
                   </li>
                   <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
                     outline outline-2 outline-teal-600 rounded-lg text-base
                     dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
-                    &nbsp;&nbsp;Firebase&nbsp;&nbsp;
+                    Firebase
                   </li>
                 </ul>
               </div>
@@ -421,15 +430,15 @@ export default function Home() {
                 fugiat corrupti dignissimos numquam. Totam, voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique commodi libero maxime quis necessitatibus, sint ab quos dolore illum eveniet.
               </p>
               <div>
-                <ul className="flex flex-row justify-center gap-4  px-1 py-1">
-                  <li className="text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                <ul className="grid grid-cols-2 align-center gap-1 sm:gap-4 sm:px-1 py-1 ">
+                  <li className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300
-                    dark:hover:bg-gray-800 dark:hover:outline-gray-800 hover:scale-95 ">
+                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800">
                     &nbsp;&nbsp;Live Demo {'>'}&nbsp;&nbsp;
                   </li>
-                  <li className="text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                  <li className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2  hover:outline-0 rounded-full transition-all duration-300
-                    dark:hover:bg-gray-800 dark:hover:outline-gray-800 hover:scale-95 ">
+                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800">
 
                     <a href='https://github.com/faizanahmkhan/worldpin_app' target='_blank'  > 
                     &nbsp;&nbsp;GitHub {'>'}&nbsp;&nbsp;
@@ -439,37 +448,40 @@ export default function Home() {
                 </ul>
                 </div>
             </div>
+
 
             <div className="text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
-              dark:shadow-gray-800 basis-1/4">
+              dark:shadow-gray-800
+              ">
                 
-              <Image className="hover:scale-150 rounded-md hover:-translate-y-10 transition-all duration-700 ease-out" 
+              <Image className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out" 
               src={worldpinimage} layout='responsive' />
               
               <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
                 WorldPin
               </h3>
               <div>
-                <ul className="flex flex-row justify-center gap-2  px-1 py-1">
+                <ul className="grid grid-cols-2 content-center gap-2 px-1 py-1 ">
                   <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
-                    outline outline-2 outline-teal-600 rounded-lg text-base
-                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
-                    &nbsp;&nbsp;React&nbsp;&nbsp;
+                    outline outline-2 outline-teal-600 rounded-lg text-base 
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white
+                    ">
+                    React
                   </li>
                   <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
                     outline outline-2 outline-teal-600 rounded-lg text-base
                     dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
-                    &nbsp;&nbsp;Java&nbsp;&nbsp;
+                    Java
                   </li>
                   <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
                     outline outline-2 outline-teal-600 rounded-lg text-base
                     dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
-                    &nbsp;&nbsp;PostgreSQL&nbsp;&nbsp;
+                    PostgreSQL
                   </li>
                   <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
                     outline outline-2 outline-teal-600 rounded-lg text-base
                     dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
-                    &nbsp;&nbsp;Firebase&nbsp;&nbsp;
+                    Firebase
                   </li>
                 </ul>
               </div>
@@ -478,15 +490,15 @@ export default function Home() {
                 fugiat corrupti dignissimos numquam. Totam, voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique commodi libero maxime quis necessitatibus, sint ab quos dolore illum eveniet.
               </p>
               <div>
-                <ul className="flex flex-row justify-center gap-4  px-1 py-1">
-                  <li className="text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                <ul className="grid grid-cols-2 align-center gap-1 sm:gap-4 sm:px-1 py-1 ">
+                  <li className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300
-                    dark:hover:bg-gray-800 dark:hover:outline-gray-800 hover:scale-95 ">
+                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800">
                     &nbsp;&nbsp;Live Demo {'>'}&nbsp;&nbsp;
                   </li>
-                  <li className="text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                  <li className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2  hover:outline-0 rounded-full transition-all duration-300
-                    dark:hover:bg-gray-800 dark:hover:outline-gray-800 hover:scale-95 ">
+                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800">
 
                     <a href='https://github.com/faizanahmkhan/worldpin_app' target='_blank'  > 
                     &nbsp;&nbsp;GitHub {'>'}&nbsp;&nbsp;
@@ -496,6 +508,8 @@ export default function Home() {
                 </ul>
                 </div>
             </div>
+
+            
 
             
           </div>
