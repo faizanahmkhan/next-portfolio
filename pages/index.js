@@ -71,7 +71,7 @@ export default function Home() {
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
                   className=
-                  "cursor-pointer text-2xl text-gray-800 hover:scale-125 dark:text-white transition-all"
+                  "cursor-pointer text-2xl text-gray-800 hover:scale-125 dark:text-white transition-all duration-300"
                 />
               </div>
             </ul>
