@@ -151,7 +151,7 @@ export default function Home() {
             </h2>
 
 
-            <div className="grid grid-cols-3 sm:grid-cols-4 lg:max:xl:px-30 xl:px-56">
+            <div className="grid grid-cols-3 sm:grid-cols-4 lg:max:xl:px-30 xl:px-56 transition-all duration-500">
         
               <div className="text-gray-600  dark:text-white flex flex-col justify-center items-center">
                 <DiCss3Full 
