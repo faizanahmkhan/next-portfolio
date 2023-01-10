@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 import { DiHtml5, DiCss3Full, DiReact, DiJava, DiPython, DiPostgresql, DiGit } from "react-icons/di";
-import { IoLogoJavascript, IoLogoFirebase, IoFootball } from "react-icons/io5";
+import { IoLogoJavascript, IoLogoFirebase} from "react-icons/io5";
 import { SiSpringboot, SiPostman, SiTailwindcss } from "react-icons/si"
 import face1 from "../public/face-1.jpg";
 import face3 from "../public/face-4.png";
@@ -68,11 +68,25 @@ export default function Home() {
               </li>
 
               <div >
-                <BsFillMoonStarsFill
+
+                {darkMode ? 
+                
+                <BsFillSunFill
                   onClick={() => setDarkMode(!darkMode)}
                   className=
-                  "cursor-pointer text-2xl text-gray-800 hover:scale-125 dark:text-white transition-all duration-300"
+                  "cursor-pointer text-2xl text-white hover:scale-105 transition-all duration-300"
                 />
+    
+                :  
+
+                <BsFillMoonFill
+                  onClick={() => setDarkMode(!darkMode)}
+                  className=
+                  "cursor-pointer text-2xl text-gray-800 hover:scale-105 transition-all duration-300"
+                />
+                
+                }
+                
               </div>
             </ul>
           </nav>
@@ -454,57 +468,59 @@ export default function Home() {
 
             <div className="text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
               dark:shadow-gray-800
-              lg:hover:scale-105 transition-all duration-700">
+               transition-all duration-700">
                 
-              <Image className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out
-              touch-pinch-zoom md:touch-none" 
+              <Image className=" rounded-lg transition-all duration-700 ease-in-out
+              touch-pinch-zoom md:touch-none blur-lg" 
               src={worldpinimage} layout='responsive' />
               
-              <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
-                WorldPin
+              <h3 className="text-xl font-bold pt-4 pb-4 text-red-500 dark:text-white">
+                Ticketing System <span className="italic text-sm">{'('}Coming Soon{')'}</span>
               </h3>
               <div>
-                <ul className="grid grid-cols-2 content-center gap-2 px-1 py-1 ">
-                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                <ul className="grid grid-cols-2 content-center gap-2 px-1 py-1 blur-sm ">
+                  <li className="text-teal-600 font-semibold   
                     outline outline-2 outline-teal-600 rounded-lg text-base 
-                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white
+                    dark:text-pink-400 dark:outline-pink-400 
                     ">
                     React
                   </li>
-                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                  <li className="text-teal-600 font-semibold  
                     outline outline-2 outline-teal-600 rounded-lg text-base
-                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
+                    dark:text-pink-400 dark:outline-pink-400 ">
                     Java
                   </li>
-                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                  <li className="text-teal-600 font-semibold 
                     outline outline-2 outline-teal-600 rounded-lg text-base
-                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
+                    dark:text-pink-400 dark:outline-pink-400 ">
                     PostgreSQL
                   </li>
-                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                  <li className="text-teal-600 font-semibold  
                     outline outline-2 outline-teal-600 rounded-lg text-base
-                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
+                    dark:text-pink-400 dark:outline-pink-400 ">
                     Firebase
                   </li>
                 </ul>
               </div>
-              <p className="py-5 text-black dark:text-gray-300">
+              <p className="py-5 text-black dark:text-gray-300 blur-sm">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
                 fugiat corrupti dignissimos numquam. Totam, voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique commodi libero maxime quis necessitatibus, sint ab quos dolore illum eveniet.
               </p>
               <div>
-                <ul className="grid grid-cols-2 align-center gap-1 sm:gap-4 sm:px-1 py-1 
+                <ul className="grid grid-cols-2 align-bottom gap-1 sm:gap-4 sm:px-1 py-1 
                 2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1">
-                  <li className=" xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
-                    outline outline-2 hover:outline-0 rounded-full transition-all duration-300
-                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800">
+                  <li className=" xl:text-lg text-white font-semibold bg-gray-800  
+                    outline outline-2  rounded-full transition-all duration-300 blur-sm
+                     dark:outline-gray-800">
                     Live Demo {'>'}
                   </li>
-                  <li className=" xl:text-lg  text-white font-semibold bg-gray-800 hover:bg-gray-900  
-                    outline outline-2  hover:outline-0 rounded-full transition-all duration-300
-                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800">
+                  <li className=" xl:text-lg  text-white font-semibold bg-gray-800 
+                    outline outline-2   rounded-full transition-all duration-300 blur-sm
+                     dark:outline-gray-800">
 
-                    <a href='https://github.com/faizanahmkhan/worldpin_app' target='_blank'  > 
+                    <a 
+                    // href='https://github.com/faizanahmkhan/worldpin_app' target='_blank'  
+                    > 
                     GitHub {'>'}
                     </a> 
 
