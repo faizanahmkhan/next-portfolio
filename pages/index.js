@@ -290,11 +290,11 @@ export default function Home() {
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 gap-12 ">
 
 
 
-            <div className="text-center shadow-xl hover:shadow-inner p-10  rounded-xl my-10 
+            <div className="flex flex-col flex-1 text-center shadow-xl hover:shadow-inner p-10  rounded-xl my-10 
               dark:shadow-gray-800 lg:hover:scale-105 transition-all duration-700">
                 
               <Image className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out
@@ -330,13 +330,74 @@ export default function Home() {
                 </ul>
               </div>
               <p className="py-5 text-black dark:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                fugiat corrupti dignissimos numquam. Totam, voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique commodi libero maxime quis necessitatibus, sint ab quos dolore illum eveniet.
+              A web app allows a user to place an image, a description, and a date on a global map by specifying a location. This was a collaborative effort, we created a REST API and implemented React components, JSX syntax and HTTP requests, which resulted in a smooth and responsive user interface. On the back-end, we utilised the Spring framework to handle server-side logic and database interactions.
               </p>
-              <div>
-                <ul className="grid grid-cols-2 align-center gap-1 sm:gap-4 sm:px-1 py-1 
+              <div className="mt-auto">
+                
+                <ul className="grid grid-cols-2 gap-1 sm:gap-4 sm:px-1 py-1 
                   2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1">
                   <li className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                    outline outline-2 hover:outline-0 rounded-full transition-all duration-300 
+                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800">
+                    &nbsp;&nbsp;Live Demo {'>'}&nbsp;&nbsp;
+                  </li>
+                  <li className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                    outline outline-2  hover:outline-0 rounded-full transition-all duration-300
+                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800">
+
+                    <a href='https://github.com/faizanahmkhan/worldpin_app' target='_blank'  > 
+                    &nbsp;&nbsp;GitHub {'>'}&nbsp;&nbsp;
+                    </a> 
+
+                  </li>
+                </ul>
+                </div>
+            </div>
+
+
+            <div className="flex flex-col flex-1 text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
+              dark:shadow-gray-800
+              lg:hover:scale-105 transition-all duration-700">
+                
+              <Image className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out
+              touch-pinch-zoom md:touch-none" 
+              src={worldpinimage} layout='responsive' />
+              
+              <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
+                TicTacToe
+              </h3>
+              <div>
+                <ul className="grid grid-cols-2 content-center gap-2 px-1 py-1">
+                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base 
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white
+                    ">
+                    React
+                  </li>
+                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
+                    Java
+                  </li>
+                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
+                    PostgreSQL
+                  </li>
+                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
+                    Firebase
+                  </li>
+                </ul>
+              </div>
+              <p className="py-5 text-black dark:text-gray-300">
+              Feast your eyes on a Halloween-themed tic-tac-toe game! This was a group effort where we decided to tackle a niche market. We employed functional components and hooks such as useState and useEffect to manage the game's state and handle interactions with the user. The game consumed data from a locally-hosted API, which we implemented using JavaScript's Fetch API to make HTTP requests to the server.
+              </p>
+              <div className="mt-auto">
+                <ul className="grid grid-cols-2 align-center gap-1 sm:gap-4 sm:px-1 py-1 
+                2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1">
+                  <li className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800">
                     &nbsp;&nbsp;Live Demo {'>'}&nbsp;&nbsp;
@@ -355,7 +416,7 @@ export default function Home() {
             </div>
 
 
-            <div className="text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
+            <div className="flex flex-col flex-1 text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
               dark:shadow-gray-800
               lg:hover:scale-105 transition-all duration-700">
                 
@@ -395,7 +456,7 @@ export default function Home() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
                 fugiat corrupti dignissimos numquam. Totam, voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique commodi libero maxime quis necessitatibus, sint ab quos dolore illum eveniet.
               </p>
-              <div>
+              <div className="mt-auto">
                 <ul className="grid grid-cols-2 align-center gap-1 sm:gap-4 sm:px-1 py-1 
                 2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1">
                   <li className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
@@ -417,69 +478,7 @@ export default function Home() {
             </div>
 
 
-            <div className="text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
-              dark:shadow-gray-800
-              lg:hover:scale-105 transition-all duration-700">
-                
-              <Image className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out
-              touch-pinch-zoom md:touch-none" 
-              src={worldpinimage} layout='responsive' />
-              
-              <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
-                WorldPin
-              </h3>
-              <div>
-                <ul className="grid grid-cols-2 content-center gap-2 px-1 py-1 ">
-                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
-                    outline outline-2 outline-teal-600 rounded-lg text-base 
-                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white
-                    ">
-                    React
-                  </li>
-                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
-                    outline outline-2 outline-teal-600 rounded-lg text-base
-                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
-                    Java
-                  </li>
-                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
-                    outline outline-2 outline-teal-600 rounded-lg text-base
-                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
-                    PostgreSQL
-                  </li>
-                  <li className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
-                    outline outline-2 outline-teal-600 rounded-lg text-base
-                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white">
-                    Firebase
-                  </li>
-                </ul>
-              </div>
-              <p className="py-5 text-black dark:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                fugiat corrupti dignissimos numquam. Totam, voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique commodi libero maxime quis necessitatibus, sint ab quos dolore illum eveniet.
-              </p>
-              <div>
-                <ul className="grid grid-cols-2 align-center gap-1 sm:gap-4 sm:px-1 py-1 
-                2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1">
-                  <li className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
-                    outline outline-2 hover:outline-0 rounded-full transition-all duration-300
-                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800">
-                    &nbsp;&nbsp;Live Demo {'>'}&nbsp;&nbsp;
-                  </li>
-                  <li className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
-                    outline outline-2  hover:outline-0 rounded-full transition-all duration-300
-                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800">
-
-                    <a href='https://github.com/faizanahmkhan/worldpin_app' target='_blank'  > 
-                    &nbsp;&nbsp;GitHub {'>'}&nbsp;&nbsp;
-                    </a> 
-
-                  </li>
-                </ul>
-                </div>
-            </div>
-
-
-            <div className="text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
+            <div className="flex flex-col flex-1 text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
               dark:shadow-gray-800
                transition-all duration-700">
                 
@@ -519,7 +518,7 @@ export default function Home() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
                 fugiat corrupti dignissimos numquam. Totam, voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique commodi libero maxime quis necessitatibus, sint ab quos dolore illum eveniet.
               </p>
-              <div>
+              <div className="mt-auto">"
                 <ul className="grid grid-cols-2 align-bottom gap-1 sm:gap-4 sm:px-1 py-1 
                 2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1">
                   <li className=" xl:text-lg text-white font-semibold bg-gray-800  
