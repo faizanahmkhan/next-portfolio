@@ -266,9 +266,11 @@ export default function Home() {
             </h3>
           </div>
 
-          <div className="flex flex-row-4  bg-pink-200">
+          <div className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-12 bg-pink-200">
+
             <div className="text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
-              dark:shadow-gray-800 basis-1/4">
+              dark:shadow-gray-800 basis-1/4
+              ">
                 
               <Image className="hover:scale-150 rounded-md hover:-translate-y-10 transition-all duration-700 ease-out" 
               src={worldpinimage} layout='responsive' />
@@ -323,6 +325,7 @@ export default function Home() {
                 </ul>
                 </div>
             </div>
+
             <div className="text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
               dark:shadow-gray-800 basis-1/4">
                 
