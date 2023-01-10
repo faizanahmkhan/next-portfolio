@@ -3,13 +3,10 @@ import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 import { DiHtml5, DiCss3Full, DiReact, DiJava, DiPython, DiPostgresql, DiGit } from "react-icons/di";
-import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
+import { IoLogoJavascript, IoLogoFirebase, IoFootball } from "react-icons/io5";
 import { SiSpringboot, SiPostman, SiTailwindcss } from "react-icons/si"
 import face1 from "../public/face-1.jpg";
 import face3 from "../public/face-4.png";
-import design from "../public/design.png";
-import code from "../public/code.png";
-import consulting from "../public/consulting.png";
 import { useState } from "react";
 import worldpinimage from "../public/worldpin-image.png";
 
@@ -154,7 +151,7 @@ export default function Home() {
             </h2>
 
 
-            <div className="grid grid-cols-4 lg:max:xl:px-30 xl:px-56">
+            <div className="grid grid-cols-3 sm:grid-cols-4 lg:max:xl:px-30 xl:px-56">
         
               <div className="text-gray-600  dark:text-white flex flex-col justify-center items-center">
                 <DiCss3Full 
@@ -180,7 +177,7 @@ export default function Home() {
               <span className="font-medium hover:text-yellow-400 text-center">JavaScript</span>  
               </div>
 
-              <div className="text-gray-600 dark:text-white flex flex-col justify-center items-center">
+              <div className="text-gray-600 dark:text-white flex flex-col justify-end items-center">
               <DiReact 
               className="text-gray-600 text-4xl sm:text-5xl hover:text-blue-300 hover:scale-110 dark:text-white
                 dark:hover:text-blue-300" 
@@ -271,7 +268,7 @@ export default function Home() {
 
 
             <div className="text-center shadow-xl hover:shadow-inner p-10  rounded-xl my-10 
-              dark:shadow-gray-800">
+              dark:shadow-gray-800 lg:hover:scale-105 transition-all duration-700">
                 
               <Image className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out
               touch-pinch-zoom md:touch-none" 
@@ -333,7 +330,7 @@ export default function Home() {
 
             <div className="text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
               dark:shadow-gray-800
-              ">
+              lg:hover:scale-105 transition-all duration-700">
                 
               <Image className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out
               touch-pinch-zoom md:touch-none" 
@@ -395,7 +392,7 @@ export default function Home() {
 
             <div className="text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
               dark:shadow-gray-800
-              ">
+              lg:hover:scale-105 transition-all duration-700">
                 
               <Image className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out
               touch-pinch-zoom md:touch-none" 
@@ -457,7 +454,7 @@ export default function Home() {
 
             <div className="text-center shadow-xl hover:shadow-inner p-10 rounded-xl my-10 
               dark:shadow-gray-800
-              ">
+              lg:hover:scale-105 transition-all duration-700">
                 
               <Image className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out
               touch-pinch-zoom md:touch-none" 
@@ -520,14 +517,31 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="pt-10">
-          <div className="m-10">
-            <h3 id="projects"
-            className="text-center text-4xl md:text-5xl font-medium  text-black dark:text-white">
-              Contact Me
-            </h3>
-          </div>
+        <section className="pt-10 pb-7">
+
+          <div className="text-black dark:text-white font-semibold grid grid-cols-2">
+
+          <div className="text-left">  
+          Created by Faizan Ahmed Khan 🔥 2023
+          </div>  
+
+          
+          
+          <div className="text-right uppercase text-teal-600 dark:text-pink-400 
+              ">
               
+              <a href="mailto:faizanahmkhan@gmail.com" className="hover:text-pink-400 dark:hover:text-teal-600">
+                Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              <a href="https://www.linkedin.com/in/faizanahmkhan/" target="_blank "className="hover:text-pink-400 dark:hover:text-teal-600">
+                Github&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              <a href="https://github.com/faizanahmkhan" target="_blank"
+              className="hover:text-pink-400 dark:hover:text-teal-600">
+                Linkedin</a>
+
+
+          </div>
+          
+          </div>
 
         </section>
 
