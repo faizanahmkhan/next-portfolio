@@ -321,7 +321,7 @@ export default function Home() {
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 gap-12 ">
+          <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 2xl:max-3xl:gap-3 gap-12 sm:max-md:mx-6 md:max-lg:mx-20">
             <div
               className="flex flex-col flex-1 text-center shadow-xl hover:shadow-inner p-10  rounded-xl my-10 
               dark:shadow-gray-800 lg:hover:scale-105 transition-all duration-700"
@@ -375,9 +375,7 @@ export default function Home() {
                 date on a global map by specifying a location. Developed through
                 collaboration, this app features a REST API and is implemented
                 with React components, JSX syntax, and HTTP requests, resulting
-                in a smooth and responsive user interface. On the back-end, the
-                Spring framework was utilised to handle server-side logic and
-                database interactions.
+                in a smooth and responsive user interface. 
               </p>
               <div className="mt-auto">
                 <ul
