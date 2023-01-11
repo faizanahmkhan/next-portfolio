@@ -26,7 +26,7 @@ export default function Home() {
       <main className="bg-white px-2 sm:px-10 md:px-20 lg:px-40 dark:bg-gray-900 scroll-smooth">
         <section className="">
           <nav className="pt-8 sm:py-10">
-            <ul className=" flex justify-between sm:flex-row sm:justify-between sm:text-base text-xs 
+            <ul className=" flex justify-between place-items-center sm:flex-row sm:text-base text-xs 
               lg:px-4 xl:px-40 px-1 xs:max-sm:px-8">
               <li>
                 <a
