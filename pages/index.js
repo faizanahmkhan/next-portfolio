@@ -144,9 +144,9 @@ export default function Home() {
             <h2 className="text-center text-2xl md:text-3xl font-semibold text-teal-600 mt-6 mb-4 dark:text-pink-400">
               Background
             </h2>
-            <div className="flex">
-              <p className="xl:w-1/5"></p>
-              <div className="xl:w-3/5 text-center sm:text-lg px-4 sm:px-0 py-2 leading sm:leading-8 text-gray-800  dark:text-gray-300 ">
+            <div className="flex 3xl:mx-60 xl:mx-32">
+              
+              <div className="text-center sm:text-lg px-4 sm:px-0 py-2 leading sm:leading-8 text-gray-800  dark:text-gray-300 ">
               <p>
               Since graduating in Chemical & Nuclear Engineering, I have set my sights on a career in the software industry. Throughout my studies, I've honed my problem-solving skills and had the opportunity to work in teams on group projects. Recently, I gained hands-on experience through a bootcamp where I've learned to build both the front-end and back-end of web applications.
               
@@ -163,7 +163,7 @@ export default function Home() {
               </p>
               </a>
               </div>
-              <p className="xl:w-1/5"></p>
+              
             </div>
           </div>
 
