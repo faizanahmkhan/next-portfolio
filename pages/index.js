@@ -11,7 +11,7 @@ import {
   DiPostgresql,
   DiGit,
 } from "react-icons/di";
-import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
+import { IoLogoJavascript, IoLogoFirebase, IoDocumentText } from "react-icons/io5";
 import { SiSpringboot, SiPostman, SiTailwindcss } from "react-icons/si";
 import face1 from "../public/face-1.jpg";
 import face3 from "../public/face-4.png";
@@ -40,10 +40,10 @@ export default function Home() {
               <li>
                 <a
                   className="
-                  bg-gradient-to-r  from-cyan-500 to-teal-500 font-bold text-white px-4 py-2 rounded-md 
-                  hover:from-cyan-700 hover:to-teal-700
-                  dark:bg-gradient-to-r dark:from-orange-400 dark:to-pink-400 
-                  dark:hover:from-orange-600 dark:hover:to-pink-600
+                  dark:bg-gradient-to-r  dark:from-cyan-500 dark:to-teal-500 font-bold text-white px-2 py-2 rounded-full 
+                  dark:hover:from-cyan-700 dark:hover:to-teal-700
+                  bg-gradient-to-r from-orange-400 to-pink-400 
+                  hover:from-orange-600 hover:to-pink-600
                   "
                   href="https://drive.google.com/file/d/1HePbe5Go0os8pzI5kaoU90dwaOdp_aWT/view?usp=pdf"
                   target="_blank"
@@ -127,9 +127,9 @@ export default function Home() {
 
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 sm:w-80 sm:h-80 mt-6 sm:mt-20 overflow-hidden md:h-96 md:w-96">
             {darkMode ? (
-              <Image src={face3} layout="fill" objectFit="cover" />
+              <Image src={face1} layout="fill" objectFit="cover" className="grayscale " />
             ) : (
-              <Image src={face1} layout="fill" objectFit="cover" />
+              <Image src={face1} layout="fill" objectFit="cover"/>
             )}
           </div>
         </section>
@@ -311,7 +311,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="pt-10">
+        <section className="pt-12">
           <div className="m-10">
             <h3
               id="projects"
@@ -435,21 +435,21 @@ export default function Home() {
                     outline outline-2 outline-teal-600 rounded-lg text-base
                     dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white"
                   >
-                    Java
+                    JavaScript
                   </li>
                   <li
                     className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
                     outline outline-2 outline-teal-600 rounded-lg text-base
                     dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white"
                   >
-                    PostgreSQL
+                    HTML
                   </li>
                   <li
                     className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
                     outline outline-2 outline-teal-600 rounded-lg text-base
                     dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white"
                   >
-                    Firebase
+                    CSS
                   </li>
                 </ul>
               </div>
@@ -479,7 +479,7 @@ export default function Home() {
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800"
                   >
                     <a
-                      href="https://github.com/faizanahmkhan/worldpin_app"
+                      href="https://github.com/faizanahmkhan/tictactoe_frontend"
                       target="_blank"
                     >
                       &nbsp;&nbsp;GitHub {">"}&nbsp;&nbsp;
@@ -512,13 +512,6 @@ export default function Home() {
                     dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white
                     "
                   >
-                    React
-                  </li>
-                  <li
-                    className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
-                    outline outline-2 outline-teal-600 rounded-lg text-base
-                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white"
-                  >
                     Java
                   </li>
                   <li
@@ -533,16 +526,19 @@ export default function Home() {
                     outline outline-2 outline-teal-600 rounded-lg text-base
                     dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white"
                   >
-                    Firebase
+                    Postman
+                  </li>
+                  <li
+                    className="text-teal-600 font-semibold hover:bg-teal-600 hover:text-white  
+                    outline outline-2 outline-teal-600 rounded-lg text-base
+                    dark:text-pink-400 dark:outline-pink-400 dark:hover:bg-pink-400 dark:hover:text-white"
+                  >
+                    Spring Boot
                   </li>
                 </ul>
               </div>
               <p className="py-5 text-black dark:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                fugiat corrupti dignissimos numquam. Totam, voluptate! Lorem,
-                ipsum dolor sit amet consectetur adipisicing elit. Similique
-                commodi libero maxime quis necessitatibus, sint ab quos dolore
-                illum eveniet.
+              This music data API was created using Spring Boot. It was designed to be used with a music web application and allows for the creation, reading, updating, and deleting of data through HTTP requests. To enhance the system's functionality, a SQL database was integrated, allowing for the storage of data with each HTTP request.
               </p>
               <div className="mt-auto">
                 <ul
@@ -660,7 +656,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="pt-10 pb-4">
+        <section className="pt-6 pb-4">
           <div className="text-black dark:text-white font-semibold grid sm:grid-cols-2">
             <div
               className="sm:text-right text-center uppercase text-teal-600 dark:text-pink-400 
