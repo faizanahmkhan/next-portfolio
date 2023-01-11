@@ -9,8 +9,11 @@ module.exports = {
     extend: {
       screens: {
         '3xl': '1700px',
+        'xs' : '375px',
     },
     }  
   },
   plugins: [],
 }
+
+// sm	640px   md	768px   lg	1024px    xl	1280px     2xl	1536px

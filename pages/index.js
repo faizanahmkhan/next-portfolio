@@ -27,7 +27,7 @@ export default function Home() {
         <section className="">
           <nav className="pt-8 sm:py-10">
             <ul className=" flex justify-between sm:flex-row sm:justify-between sm:text-base text-xs 
-              lg:px-4 xl:px-40">
+              lg:px-4 xl:px-40 px-1 xs:max-sm:px-8">
               <li>
                 <a
                   className="
