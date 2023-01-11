@@ -373,7 +373,7 @@ export default function Home() {
                 Pin your memories on the map, share them with the world. This
                 web app allows a user to place an image, a description, and a
                 date on a global map by specifying a location. Developed through
-                collaboration, this app features a REST API and is implemented
+                collaboration, this app utilises a REST API and is implemented
                 with React components, JSX syntax, and HTTP requests, resulting
                 in a smooth and responsive user interface. 
               </p>
@@ -584,7 +584,7 @@ export default function Home() {
                 layout="responsive"
               />
 
-              <h3 className="text-xl font-bold pt-4 pb-4 text-red-500 dark:text-white">
+              <h3 className="text-xl font-bold pt-4 pb-4 text-red-500 dark:text-orange-600">
                 Ticketing System{" "}
                 <span className="italic text-sm">
                   {"("}Coming Soon{")"}
@@ -631,7 +631,7 @@ export default function Home() {
                 illum eveniet.
               </p>
               <div className="mt-auto">
-                "
+          
                 <ul
                   className="grid grid-cols-2 align-bottom gap-1 sm:gap-4 sm:px-1 py-1 
                 2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1"
@@ -660,7 +660,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="pt-10 pb-7">
+        <section className="pt-10 pb-4">
           <div className="text-black dark:text-white font-semibold grid sm:grid-cols-2">
             <div
               className="sm:text-right text-center uppercase text-teal-600 dark:text-pink-400 
