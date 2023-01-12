@@ -11,12 +11,18 @@ import {
   DiPostgresql,
   DiGit,
 } from "react-icons/di";
-import { IoLogoJavascript, IoLogoFirebase, IoDocumentText } from "react-icons/io5";
+import {
+  IoLogoJavascript,
+  IoLogoFirebase,
+  IoDocumentText,
+} from "react-icons/io5";
 import { SiSpringboot, SiPostman, SiTailwindcss } from "react-icons/si";
 import face1 from "../public/face-1.jpg";
-import face3 from "../public/face-4.png";
 import { useState } from "react";
 import worldpinimage from "../public/worldpin-image.png";
+import musicdataapi from "../public/beatznta.png"
+
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -127,9 +133,14 @@ export default function Home() {
 
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 sm:w-80 sm:h-80 mt-6 sm:mt-20 overflow-hidden md:h-96 md:w-96">
             {darkMode ? (
-              <Image src={face1} layout="fill" objectFit="cover" className="grayscale " />
+              <Image
+                src={face1}
+                layout="fill"
+                objectFit="cover"
+                className="grayscale "
+              />
             ) : (
-              <Image src={face1} layout="fill" objectFit="cover"/>
+              <Image src={face1} layout="fill" objectFit="cover" />
             )}
           </div>
         </section>
@@ -166,14 +177,14 @@ export default function Home() {
                   </span>
                 </p>
                 <div className="flex justify-center">
-                <a
-                  href="https://drive.google.com/file/d/1HePbe5Go0os8pzI5kaoU90dwaOdp_aWT/view?usp=pdf"
-                  target="_blank"
-                >
-                  <p className="pt-6 font-bold hover:scale-105 transition-all text-xl">
-                    View My CV {">"}
-                  </p>
-                </a>
+                  <a
+                    href="https://drive.google.com/file/d/1HePbe5Go0os8pzI5kaoU90dwaOdp_aWT/view?usp=pdf"
+                    target="_blank"
+                  >
+                    <p className="pt-6 font-bold hover:scale-105 transition-all text-xl">
+                      View My CV {">"}
+                    </p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -377,7 +388,7 @@ export default function Home() {
                 date on a global map by specifying a location. Developed through
                 collaboration, this app utilises a REST API and is implemented
                 with React components, JSX syntax, and HTTP requests, resulting
-                in a smooth and responsive user interface. 
+                in a smooth and responsive user interface.
               </p>
               <div className="mt-auto">
                 <ul
@@ -499,7 +510,7 @@ export default function Home() {
               <Image
                 className="lg:hover:scale-125 rounded-lg lg:hover:-translate-y-6 transition-all duration-700 ease-in-out
               touch-pinch-zoom md:touch-none"
-                src={worldpinimage}
+                src={musicdataapi}
                 layout="responsive"
               />
 
@@ -540,30 +551,34 @@ export default function Home() {
                 </ul>
               </div>
               <p className="py-5 text-black dark:text-gray-300">
-              This music data API was created using Spring Boot. It was designed to be used with a music web application and allows for the creation, reading, updating, and deleting of data through HTTP requests. To enhance the system's functionality, a SQL database was integrated, allowing for the storage of data with each HTTP request.
+                This API was
+                designed to be used with a music web app and allows for
+                the creation, reading, updating, and deleting of data through
+                HTTP requests. To enhance the system's functionality, a SQL
+                database was integrated, allowing for the storage of data with
+                each HTTP request. No live demo, but the ReadMe on GitHub will walk you through interacting with the API.
               </p>
               <div className="mt-auto">
                 <ul
-                  className="grid grid-cols-2 align-center gap-1 sm:gap-4 sm:px-1 py-1 
-                2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1"
+                  className="grid justify-center gap-1 sm:gap-4 sm:px-1 py-1"
                 >
-                  <li
+                  {/* <li
                     className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800"
                   >
                     &nbsp;&nbsp;Live Demo {">"}&nbsp;&nbsp;
-                  </li>
+                  </li> */}
                   <li
                     className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2  hover:outline-0 rounded-full transition-all duration-300
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800"
                   >
                     <a
-                      href="https://github.com/faizanahmkhan/worldpin_app"
+                      href="https://github.com/faizanahmkhan/music_api"
                       target="_blank"
                     >
-                      &nbsp;&nbsp;GitHub {">"}&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GitHub {">"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </a>
                   </li>
                 </ul>
@@ -629,7 +644,6 @@ export default function Home() {
                 illum eveniet.
               </p>
               <div className="mt-auto">
-          
                 <ul
                   className="grid grid-cols-2 align-bottom gap-1 sm:gap-4 sm:px-1 py-1 
                 2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1"
