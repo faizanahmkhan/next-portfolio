@@ -165,6 +165,7 @@ export default function Home() {
                     of a team dedicated to creating innovative solutions.
                   </span>
                 </p>
+                <div className="flex justify-center">
                 <a
                   href="https://drive.google.com/file/d/1HePbe5Go0os8pzI5kaoU90dwaOdp_aWT/view?usp=pdf"
                   target="_blank"
@@ -173,12 +174,13 @@ export default function Home() {
                     View My CV {">"}
                   </p>
                 </a>
+                </div>
               </div>
             </div>
           </div>
 
           <div>
-            <h2 className="text-center text-2xl md:text-3xl font-semibold text-teal-600 m-14 dark:text-pink-400">
+            <h2 className="text-center text-2xl md:text-3xl font-semibold text-teal-600 m-16 dark:text-pink-400">
               Skills & Tools
             </h2>
 
@@ -327,7 +329,7 @@ export default function Home() {
               dark:shadow-gray-800 lg:hover:scale-105 transition-all duration-700"
             >
               <Image
-                className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out
+                className="lg:hover:scale-125 rounded-lg lg:hover:-translate-y-6 transition-all duration-700 ease-in-out
               touch-pinch-zoom md:touch-none"
                 src={worldpinimage}
                 layout="responsive"
@@ -411,7 +413,7 @@ export default function Home() {
               lg:hover:scale-105 transition-all duration-700"
             >
               <Image
-                className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out
+                className="lg:hover:scale-125 rounded-lg lg:hover:-translate-y-6 transition-all duration-700 ease-in-out
               touch-pinch-zoom md:touch-none"
                 src={worldpinimage}
                 layout="responsive"
@@ -495,7 +497,7 @@ export default function Home() {
               lg:hover:scale-105 transition-all duration-700"
             >
               <Image
-                className="lg:hover:scale-150 rounded-lg lg:hover:-translate-y-10 transition-all duration-700 ease-in-out
+                className="lg:hover:scale-125 rounded-lg lg:hover:-translate-y-6 transition-all duration-700 ease-in-out
               touch-pinch-zoom md:touch-none"
                 src={worldpinimage}
                 layout="responsive"
