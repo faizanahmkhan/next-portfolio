@@ -14,18 +14,24 @@ import {
 import {
   IoLogoJavascript,
   IoLogoFirebase,
-  IoDocumentText,
 } from "react-icons/io5";
 import { SiSpringboot, SiPostman, SiTailwindcss } from "react-icons/si";
 import face1 from "../public/face-1.jpg";
 import { useState } from "react";
 import worldpinimage from "../public/worldpin-image.png";
-import musicdataapi from "../public/beatznta.png"
+import musicdataapi from "../public/beatznta.png";
+import worldpinvid from "../public/Worldpin-Presentation.mp4";
 
-
+import ReactPlayer from 'react-player'
 
 export default function Home() {
+
   const [darkMode, setDarkMode] = useState(false);
+
+  const worldpinURL = "https://www.dropbox.com/s/53m4czhv8obphrl/Worldpin%20Presentation.mp4?dl=0";
+
+  const openVid = () => window.open(worldpinvid, '_blank');
+  const openLink = () => window.open(worldpinURL, '_blank');
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -37,7 +43,7 @@ export default function Home() {
       </Head>
 
       <main className="bg-white px-2 sm:px-10 md:px-20 lg:px-40 dark:bg-gray-900 scroll-smooth">
-        <section className="">
+        <section >
           <nav className="pt-8 sm:py-10">
             <ul
               className=" flex justify-between place-items-center sm:flex-row sm:text-base text-xs 
@@ -398,9 +404,13 @@ export default function Home() {
                   <li
                     className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300 
-                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800"
+                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800" 
                   >
+                    <button onClick={openVid}>
                     &nbsp;&nbsp;Live Demo {">"}&nbsp;&nbsp;
+                    <ReactPlayer url={worldpinvid} width='0' height='0' playing={false} style={{display:'none'}}
+                    controls/>
+                    </button>
                   </li>
                   <li
                     className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
@@ -484,8 +494,12 @@ export default function Home() {
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800"
                   >
+                    <button onClick={openLink}>
                     &nbsp;&nbsp;Live Demo {">"}&nbsp;&nbsp;
-                  </li>
+                    <ReactPlayer url={worldpinURL} width='0' height='0' playing={false} style={{display:'none'}}
+                    controls/>
+                    </button>
+                </li>
                   <li
                     className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2  hover:outline-0 rounded-full transition-all duration-300

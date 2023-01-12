@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "burtons";
-  src: url("../public/Burtons.otf");
-}
 
 /* smooth scrolling */
 @layer base {
