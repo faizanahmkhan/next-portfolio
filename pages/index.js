@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import ReactPlayer from 'react-player'
+import ReactPlayer from "react-player";
 import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 import {
@@ -12,35 +12,33 @@ import {
   DiPostgresql,
   DiGit,
 } from "react-icons/di";
-import {
-  IoLogoJavascript,
-  IoLogoFirebase,
-} from "react-icons/io5";
+import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
 import { SiSpringboot, SiPostman, SiTailwindcss } from "react-icons/si";
 import face1 from "../public/face-1.jpg";
 import { useState } from "react";
 import worldpinimage from "../public/worldpin-image.png";
 import tictactoeimage from "../public/tictactoe-image.png";
-import ticketingimage from "../public/ticketing-image.png"
+import ticketingimage from "../public/ticketing-image.png";
 import musicdataapi from "../public/beatznta.png";
 import worldpinvid from "../public/Worldpin-Presentation.mp4";
-import tictactoevid from "../public/Tictactoe-Presentation.mp4"
+import tictactoevid from "../public/Tictactoe-Presentation.mp4";
 import VideoPlayer from "./videoOpener";
-import '../styles/Home.module.css'
-import Link from 'next/link'
+import "../styles/Home.module.css";
+import Link from "next/link";
 
 
 export default function Home() {
-
   const [darkMode, setDarkMode] = useState(false);
 
-  // const worldpinURL = "https://www.dropbox.com/s/53m4czhv8obphrl/Worldpin%20Presentation.mp4?dl=0";
+  const handleLoad = () => {
+    console.log('PDF loaded successfully');
+  }
+
+  const handleError = (error) => {
+    console.log('Error loading PDF:', error);
+  }
 
 
-  
-
-
-  // const openLink = () => window.open(worldpinURL, '_blank');
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -52,7 +50,7 @@ export default function Home() {
       </Head>
 
       <main className="bg-white px-2 sm:px-10 md:px-20 lg:px-40 dark:bg-gray-900 scroll-smooth">
-        <section >
+        <section>
           <nav className="pt-8 sm:py-10">
             <ul
               className=" flex justify-between place-items-center sm:flex-row sm:text-base text-xs 
@@ -153,7 +151,7 @@ export default function Home() {
                 layout="fill"
                 objectFit="cover"
                 className="grayscale "
-                alt = 'image of myself'
+                alt="image of myself"
               />
             ) : (
               <Image src={face1} layout="fill" objectFit="cover" />
@@ -339,7 +337,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-      
 
         <section className="pt-12">
           <div className="m-10">
@@ -351,19 +348,22 @@ export default function Home() {
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 2xl:max-3xl:gap-3 gap-12 sm:max-md:mx-6 md:max-lg:mx-20" id="project-card">
+          <div
+            className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 2xl:max-3xl:gap-3 gap-12 sm:max-md:mx-6 md:max-lg:mx-20"
+            id="project-card"
+          >
             <div
               className="flex flex-col flex-1 text-center shadow-xl hover:shadow-inner p-10  rounded-xl my-10 
               dark:shadow-gray-800 lg:hover:scale-105 transition-all duration-700"
             >
               <div>
-              <Image
-                className="lg:hover:scale-125 rounded-lg lg:hover:-translate-y-6 transition-all duration-700 ease-in-out
+                <Image
+                  className="lg:hover:scale-125 rounded-lg lg:hover:-translate-y-6 transition-all duration-700 ease-in-out
               touch-pinch-zoom md:touch-none"
-                alt='image of worldpin app'
-                src={worldpinimage}
-                layout="responsive"
-              />
+                  alt="image of worldpin app"
+                  src={worldpinimage}
+                  layout="responsive"
+                />
               </div>
               <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
                 WorldPin
@@ -417,15 +417,11 @@ export default function Home() {
                   <li
                     className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300 
-                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800" 
+                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800"
                   >
-                    <Link href={tictactoevid} target='_blank'>
-                    
-                    &nbsp;&nbsp;Live Demo {">"}&nbsp;&nbsp;
-                    
-                    
+                    <Link href={worldpinvid} target="_blank">
+                      &nbsp;&nbsp;Live Demo {">"}&nbsp;&nbsp;
                     </Link>
-                   
                   </li>
                   <li
                     className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
@@ -453,7 +449,7 @@ export default function Home() {
               touch-pinch-zoom md:touch-none"
                 src={tictactoeimage}
                 layout="responsive"
-                alt='image of tictactoe app'
+                alt="image of tictactoe app"
               />
 
               <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
@@ -510,14 +506,10 @@ export default function Home() {
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800"
                   >
-                    <Link href={tictactoevid} target='_blank'>
-                      
-                  
-                    &nbsp;&nbsp;Live Demo {">"}&nbsp;&nbsp;
-                  
-                  </Link>
-                  
-                </li>
+                    <Link href={tictactoevid} target="_blank">
+                      &nbsp;&nbsp;Live Demo {">"}&nbsp;&nbsp;
+                    </Link>
+                  </li>
                   <li
                     className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2  hover:outline-0 rounded-full transition-all duration-300
@@ -544,7 +536,7 @@ export default function Home() {
               touch-pinch-zoom md:touch-none"
                 src={musicdataapi}
                 layout="responsive"
-                alt='image of music data api'
+                alt="image of music data api"
               />
 
               <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
@@ -584,17 +576,15 @@ export default function Home() {
                 </ul>
               </div>
               <p className="py-5 text-black dark:text-gray-300">
-                This API was
-                designed to be used with a music web app and allows for
-                the creation, reading, updating, and deleting of data through
-                HTTP requests. To enhance the system's functionality, a SQL
-                database was integrated, allowing for the storage of data with
-                each HTTP request. No live demo, but the ReadMe on GitHub will walk you through interacting with the API.
+                This API was designed to be used with a music web app and allows
+                for the creation, reading, updating, and deleting of data
+                through HTTP requests. To enhance the system's functionality, a
+                SQL database was integrated, allowing for the storage of data
+                with each HTTP request. No live demo, but the ReadMe on GitHub
+                will walk you through interacting with the API.
               </p>
               <div className="mt-auto">
-                <ul
-                  className="grid justify-center gap-1 sm:gap-4 sm:px-1 py-1"
-                >
+                <ul className="grid justify-center gap-1 sm:gap-4 sm:px-1 py-1">
                   {/* <li
                     className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300
@@ -611,7 +601,8 @@ export default function Home() {
                       href="https://github.com/faizanahmkhan/music_api"
                       target="_blank"
                     >
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GitHub {">"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GitHub {">"}
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </a>
                   </li>
                 </ul>
@@ -628,7 +619,7 @@ export default function Home() {
               touch-pinch-zoom md:touch-none blur-lg"
                 src={ticketingimage}
                 layout="responsive"
-                alt='blurred image of ticketing system'
+                alt="blurred image of ticketing system"
               />
 
               <h3 className="text-xl font-bold pt-4 pb-4 text-red-500 dark:text-orange-600">
