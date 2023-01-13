@@ -25,14 +25,8 @@ export default function VideoPlayer() {
       }
   
     const handleOpen = () => {
-        const video = document.getElementById("my-video");
-        if(video.pause) {
-          video.play();
-        } else {
-          video.pause();
-        }
-      }
-    
+      setIsOpen(true);
+    }
     const handleClose = () => {
       setIsOpen(false);
     }
@@ -46,7 +40,7 @@ export default function VideoPlayer() {
               X
             </button>
             <div className="video-container">
-              <video id='my-video' src={worldpinvid} controls />
+              <video src={worldpinvid} controls />
             </div>
           </div>
         )}
