@@ -1,9 +1,6 @@
-// import worldpinvid from '../public/Worldpin-Presentation.mp4'
-
-
-
-// export default function openWorldpinVid () {
-//     const openVid = () => window.open(worldpinvid, '_blank');
-    
-// }
+{/* <button onClick={openLink}>
+                    &nbsp;&nbsp;Live Demo {">"}&nbsp;&nbsp;
+                    <ReactPlayer url={worldpinURL} width='0' height='0' playing={false} style={{display:'none'}}
+                    controls/>
+                    </button> */}
 

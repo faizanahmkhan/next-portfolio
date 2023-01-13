@@ -21,6 +21,8 @@ import { useState } from "react";
 import worldpinimage from "../public/worldpin-image.png";
 import musicdataapi from "../public/beatznta.png";
 import worldpinvid from "../public/Worldpin-Presentation.mp4";
+import tictactoeimage from "../public/tictactoe-image.png"
+
 
 import ReactPlayer from 'react-player'
 
@@ -28,7 +30,7 @@ export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
 
-  const worldpinURL = "https://www.dropbox.com/s/53m4czhv8obphrl/Worldpin%20Presentation.mp4?dl=0";
+  // const worldpinURL = "https://www.dropbox.com/s/53m4czhv8obphrl/Worldpin%20Presentation.mp4?dl=0";
 
   const openVid = () => window.open(worldpinvid, '_blank');
   const openLink = () => window.open(worldpinURL, '_blank');
@@ -436,7 +438,7 @@ export default function Home() {
               <Image
                 className="lg:hover:scale-125 rounded-lg lg:hover:-translate-y-6 transition-all duration-700 ease-in-out
               touch-pinch-zoom md:touch-none"
-                src={worldpinimage}
+                src={tictactoeimage}
                 layout="responsive"
               />
 
@@ -494,9 +496,9 @@ export default function Home() {
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800"
                   >
-                    <button onClick={openLink}>
+                    <button onClick={openVid}>
                     &nbsp;&nbsp;Live Demo {">"}&nbsp;&nbsp;
-                    <ReactPlayer url={worldpinURL} width='0' height='0' playing={false} style={{display:'none'}}
+                    <ReactPlayer url={worldpinvid} width='0' height='0' playing={false} style={{display:'none'}}
                     controls/>
                     </button>
                 </li>
