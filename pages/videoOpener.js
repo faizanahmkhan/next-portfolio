@@ -40,7 +40,7 @@ export default function VideoPlayer() {
               X
             </button>
             <div className="video-container">
-              <video src={worldpinvid} controls />
+              <video src={worldpinvid} controls width='100%' />
             </div>
           </div>
         )}
