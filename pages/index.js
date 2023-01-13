@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import ReactPlayer from 'react-player'
 import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 import {
@@ -19,21 +20,30 @@ import { SiSpringboot, SiPostman, SiTailwindcss } from "react-icons/si";
 import face1 from "../public/face-1.jpg";
 import { useState } from "react";
 import worldpinimage from "../public/worldpin-image.png";
+import tictactoeimage from "../public/tictactoe-image.png";
+import ticketingimage from "../public/ticketing-image.png"
 import musicdataapi from "../public/beatznta.png";
 import worldpinvid from "../public/Worldpin-Presentation.mp4";
-import tictactoeimage from "../public/tictactoe-image.png"
+import tictactoevid from "../public/Tictactoe-Presentation.mp4"
 
 
-import ReactPlayer from 'react-player'
+
 
 export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
+  
 
   // const worldpinURL = "https://www.dropbox.com/s/53m4czhv8obphrl/Worldpin%20Presentation.mp4?dl=0";
 
-  const openVid = () => window.open(worldpinvid, '_blank');
-  const openLink = () => window.open(worldpinURL, '_blank');
+
+
+
+  const openWpVid = () => window.open(worldpinvid, '_blank');
+  const openTicVid = () => window.open(tictactoevid, '_blank');
+
+
+  // const openLink = () => window.open(worldpinURL, '_blank');
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -408,7 +418,7 @@ export default function Home() {
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300 
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800" 
                   >
-                    <button onClick={openVid}>
+                    <button onClick={openWpVid}>
                     &nbsp;&nbsp;Live Demo {">"}&nbsp;&nbsp;
                     <ReactPlayer url={worldpinvid} width='0' height='0' playing={false} style={{display:'none'}}
                     controls/>
@@ -496,9 +506,9 @@ export default function Home() {
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800"
                   >
-                    <button onClick={openVid}>
+                    <button onClick={openTicVid}>
                     &nbsp;&nbsp;Live Demo {">"}&nbsp;&nbsp;
-                    <ReactPlayer url={worldpinvid} width='0' height='0' playing={false} style={{display:'none'}}
+                    <ReactPlayer url={tictactoevid} width='0' height='0' playing={false} style={{display:'none'}}
                     controls/>
                     </button>
                 </li>
@@ -609,7 +619,7 @@ export default function Home() {
               <Image
                 className=" rounded-lg transition-all duration-700 ease-in-out
               touch-pinch-zoom md:touch-none blur-lg"
-                src={worldpinimage}
+                src={ticketingimage}
                 layout="responsive"
               />
 
