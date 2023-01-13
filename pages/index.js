@@ -25,22 +25,19 @@ import ticketingimage from "../public/ticketing-image.png"
 import musicdataapi from "../public/beatznta.png";
 import worldpinvid from "../public/Worldpin-Presentation.mp4";
 import tictactoevid from "../public/Tictactoe-Presentation.mp4"
-
-
+import VideoPlayer from "./videoOpener";
+import '../styles/Home.module.css'
+import Link from 'next/link'
 
 
 export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
-  
 
   // const worldpinURL = "https://www.dropbox.com/s/53m4czhv8obphrl/Worldpin%20Presentation.mp4?dl=0";
 
 
-
-
-  const openWpVid = () => window.open(worldpinvid, '_blank');
-  const openTicVid = () => window.open(tictactoevid, '_blank');
+  
 
 
   // const openLink = () => window.open(worldpinURL, '_blank');
@@ -156,6 +153,7 @@ export default function Home() {
                 layout="fill"
                 objectFit="cover"
                 className="grayscale "
+                alt = 'image of myself'
               />
             ) : (
               <Image src={face1} layout="fill" objectFit="cover" />
@@ -341,6 +339,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+      
 
         <section className="pt-12">
           <div className="m-10">
@@ -352,18 +351,20 @@ export default function Home() {
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 2xl:max-3xl:gap-3 gap-12 sm:max-md:mx-6 md:max-lg:mx-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 2xl:max-3xl:gap-3 gap-12 sm:max-md:mx-6 md:max-lg:mx-20" id="project-card">
             <div
               className="flex flex-col flex-1 text-center shadow-xl hover:shadow-inner p-10  rounded-xl my-10 
               dark:shadow-gray-800 lg:hover:scale-105 transition-all duration-700"
             >
+              <div>
               <Image
                 className="lg:hover:scale-125 rounded-lg lg:hover:-translate-y-6 transition-all duration-700 ease-in-out
               touch-pinch-zoom md:touch-none"
+                alt='image of worldpin app'
                 src={worldpinimage}
                 layout="responsive"
               />
-
+              </div>
               <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
                 WorldPin
               </h3>
@@ -418,11 +419,13 @@ export default function Home() {
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300 
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800" 
                   >
-                    <button onClick={openWpVid}>
+                    <Link href={tictactoevid} target='_blank'>
+                    
                     &nbsp;&nbsp;Live Demo {">"}&nbsp;&nbsp;
-                    <ReactPlayer url={worldpinvid} width='0' height='0' playing={false} style={{display:'none'}}
-                    controls/>
-                    </button>
+                    
+                    
+                    </Link>
+                   
                   </li>
                   <li
                     className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
@@ -450,6 +453,7 @@ export default function Home() {
               touch-pinch-zoom md:touch-none"
                 src={tictactoeimage}
                 layout="responsive"
+                alt='image of tictactoe app'
               />
 
               <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
@@ -506,11 +510,13 @@ export default function Home() {
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800"
                   >
-                    <button onClick={openTicVid}>
+                    <Link href={tictactoevid} target='_blank'>
+                      
+                  
                     &nbsp;&nbsp;Live Demo {">"}&nbsp;&nbsp;
-                    <ReactPlayer url={tictactoevid} width='0' height='0' playing={false} style={{display:'none'}}
-                    controls/>
-                    </button>
+                  
+                  </Link>
+                  
                 </li>
                   <li
                     className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
@@ -538,6 +544,7 @@ export default function Home() {
               touch-pinch-zoom md:touch-none"
                 src={musicdataapi}
                 layout="responsive"
+                alt='image of music data api'
               />
 
               <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
@@ -621,6 +628,7 @@ export default function Home() {
               touch-pinch-zoom md:touch-none blur-lg"
                 src={ticketingimage}
                 layout="responsive"
+                alt='blurred image of ticketing system'
               />
 
               <h3 className="text-xl font-bold pt-4 pb-4 text-red-500 dark:text-orange-600">
