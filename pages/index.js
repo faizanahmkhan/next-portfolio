@@ -408,7 +408,7 @@ export default function Home() {
                   2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1"
                 >
                   <li
-                    className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                    className="xl:text-lg text-white font-semibold bg-gray-700 dark:bg-gray-800 hover:bg-gray-900  
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300 
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 dark:outline-gray-800 " 
                   >
@@ -416,7 +416,7 @@ export default function Home() {
                     <WpVideoPlayer/>
                   </li>
                   <li
-                    className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                    className="xl:text-lg text-white font-semibold bg-gray-700 dark:bg-gray-800 hover:bg-gray-900  
                     outline outline-2  hover:outline-0 rounded-full transition-all duration-300
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 dark:outline-gray-800"
                   >
@@ -494,14 +494,14 @@ export default function Home() {
                 2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1"
                 >
                   <li
-                    className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                    className="xl:text-lg text-white font-semibold bg-gray-700 dark:bg-gray-800 hover:bg-gray-900  
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 dark:outline-gray-800"
                   >
                     <TicVideoPlayer/>
                   </li>
                   <li
-                    className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                    className="xl:text-lg text-white font-semibold bg-gray-700 dark:bg-gray-800 hover:bg-gray-900  
                     outline outline-2  hover:outline-0 rounded-full transition-all duration-300
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 dark:outline-gray-800"
                   >
@@ -575,15 +575,8 @@ export default function Home() {
               </p>
               <div className="mt-auto">
                 <ul className="grid justify-center gap-1 sm:gap-4 sm:px-1 py-1">
-                  {/* <li
-                    className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
-                    outline outline-2 hover:outline-0 rounded-full transition-all duration-300
-                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 hover:scale-95 dark:outline-gray-800"
-                  >
-                    &nbsp;&nbsp;Live Demo {">"}&nbsp;&nbsp;
-                  </li> */}
                   <li
-                    className="xl:text-lg text-white font-semibold bg-gray-800 hover:bg-gray-900  
+                    className="xl:text-lg text-white font-semibold bg-gray-700 dark:bg-gray-800 hover:bg-gray-900  
                     outline outline-2  hover:outline-0 rounded-full transition-all duration-300
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 dark:outline-gray-800"
                   >
