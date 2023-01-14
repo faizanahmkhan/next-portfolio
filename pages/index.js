@@ -19,12 +19,9 @@ import worldpinimage from "../public/worldpin-image.png";
 import tictactoeimage from "../public/tictactoe-image.png";
 import ticketingimage from "../public/ticketing-image.png";
 import musicdataapi from "../public/beatznta.png";
-import worldpinvid from "../public/Worldpin-Presentation.mp4";
-import tictactoevid from "../public/Tictactoe-Presentation.mp4";
 import WpVideoPlayer from "./WpVideoOpener";
 import TicVideoPlayer from "./TicVideoOpener";
 import "../styles/Home.module.css";
-import Link from "next/link";
 
 
 export default function Home() {
