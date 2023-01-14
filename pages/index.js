@@ -69,7 +69,7 @@ export default function Home() {
               <li>
                 <a
                   className="
-                  bg-gradient-to-r from-cyan-500 to-teal-500 font-bold text-white px-4 py-2 rounded-md 
+                  bg-gradient-to-r from-cyan-500 to-teal-500 font-bold text-white px-4 py-2 rounded-full 
                   hover:from-cyan-700 hover:to-teal-700
                   dark:bg-gradient-to-r dark:from-orange-400 dark:to-pink-400 
                   dark:hover:from-orange-600 dark:hover:to-pink-600"
@@ -81,7 +81,7 @@ export default function Home() {
               <li>
                 <a
                   className="
-                  bg-gradient-to-r from-cyan-500 to-teal-500 font-bold text-white px-4 py-2 rounded-md 
+                  bg-gradient-to-r from-cyan-500 to-teal-500 font-bold text-white px-4 py-2 rounded-full 
                   hover:from-cyan-700 hover:to-teal-700
                   dark:bg-gradient-to-r dark:from-orange-400 dark:to-pink-400 
                   dark:hover:from-orange-600 dark:hover:to-pink-600"
@@ -93,15 +93,21 @@ export default function Home() {
 
               <div>
                 {darkMode ? (
+                  <div className="cursor-pointer text-base sm:text-xl transition-all duration-300 dark:bg-gradient-to-r  dark:from-cyan-500 dark:to-teal-500 font-bold text-white px-4 py-2 rounded-full 
+                  dark:hover:from-cyan-700 dark:hover:to-teal-700">
                   <BsFillSunFill
                     onClick={() => setDarkMode(!darkMode)}
-                    className="cursor-pointer text-2xl text-white hover:scale-105 transition-all duration-300"
                   />
+                  </div>
                 ) : (
+                  <div className="cursor-pointer text-sm sm:text-xl transition-all duration-300 font-bold text-white px-4 py-2 rounded-full bg-gradient-to-r from-orange-400 to-pink-400 
+                  hover:from-orange-600 hover:to-pink-600">
                   <BsFillMoonFill
                     onClick={() => setDarkMode(!darkMode)}
-                    className="cursor-pointer text-2xl text-gray-800 hover:scale-105 transition-all duration-300"
-                  />
+                    
+                   /> 
+                   </div>
+                  
                 )}
               </div>
             </ul>
@@ -140,18 +146,8 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 sm:w-80 sm:h-80 mt-6 sm:mt-20 overflow-hidden md:h-96 md:w-96">
-            {darkMode ? (
-              <Image
-                src={face1}
-                layout="fill"
-                objectFit="cover"
-                className="grayscale "
-                alt="image of myself"
-              />
-            ) : (
+          <div className="relative mx-auto rounded-full w-60 h-60 sm:w-80 sm:h-80 mt-6 sm:mt-20 overflow-hidden md:h-96 md:w-96">
               <Image src={face1} layout="fill" objectFit="cover" alt='image of myself'/>
-            )}
           </div>
         </section>
 
