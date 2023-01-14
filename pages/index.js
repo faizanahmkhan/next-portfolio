@@ -446,7 +446,7 @@ export default function Home() {
               />
 
               <h3 className="text-xl font-bold pt-4 pb-4 text-black dark:text-white">
-                TicTacToe
+                Tic-Tac-Toe
               </h3>
               <div>
                 <ul className="grid grid-cols-2 content-center gap-2 px-1 py-1">
