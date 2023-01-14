@@ -2,7 +2,7 @@ import worldpinvid from "../public/Worldpin-Presentation.mp4"
 import { useState, useEffect, useRef } from "react";
 import '../styles/Home.module.css'
 
-export default function VideoPlayer() {
+export default function WpVideoPlayer() {
     const [isOpen, setIsOpen] = useState(false);
     const closeButtonRef = useRef(null);
   
@@ -33,7 +33,7 @@ export default function VideoPlayer() {
   
     return (
       <div>
-        <button onClick={handleOpen}>Open Video</button>
+        <button onClick={handleOpen}>&nbsp;&nbsp;Live Demo {">"}&nbsp;&nbsp;</button>
         {isOpen && (
           <div className="video-overlay" aria-label="Video Modal" tabIndex="-1">
             <button className="close-button" onClick={handleClose} aria-label="Close Video Modal" ref={closeButtonRef}>
@@ -68,7 +68,7 @@ export default function VideoPlayer() {
               top: 20px;
               right: 20px;
               font-size: 20px;
-              font-weight: bold;
+              font-weight: semibold;
               background-color: transparent;
               border: 0;
               color: white;
