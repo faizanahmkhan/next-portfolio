@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
-import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from "react-icons/ai";
 import {
   DiHtml5,
   DiCss3Full,
@@ -131,18 +131,18 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="text-4xl sm:text-5xl flex justify-center gap-16 text-gray-600 dark:text-white">
+          <div className="text-4xl sm:text-5xl flex justify-center gap-16  ">
             <a
               href="https://www.linkedin.com/in/faizanahmkhan/"
               target="_blank"
             >
-              <AiFillLinkedin className="hover:text-blue-500 hover:scale-110" />
+              <AiFillLinkedin className="hover:text-blue-500 lg:hover:scale-110 text-blue-500 lg:text-gray-600 dark:text-white dark:hover:text-blue-500" />
             </a>
             <a href="https://github.com/faizanahmkhan" target="_blank">
-              <AiFillGithub className="hover:text-gray-400 hover:scale-110" />
+              <AiFillGithub className="hover:text-gray-400 lg:hover:scale-110 text-gray-400 lg:text-gray-600 dark:text-white dark:hover:text-gray-400" />
             </a>
             <a href="mailto:faizanahmkhan@gmail.com">
-              <AiFillMail className="hover:text-yellow-400 hover:scale-110 " />
+              <AiOutlineMail className="hover:text-red-500 lg:hover:scale-110 text-red-500 lg:text-gray-600 dark:text-white dark:hover:text-red-500" />
             </a>
           </div>
 
