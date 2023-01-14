@@ -94,16 +94,18 @@ export default function Home() {
               <div>
                 {darkMode ? (
                   <div className="cursor-pointer text-base sm:text-xl transition-all duration-300 dark:bg-gradient-to-r  dark:from-cyan-500 dark:to-teal-500 font-bold text-white px-4 py-2 rounded-full 
-                  dark:hover:from-cyan-700 dark:hover:to-teal-700">
+                  dark:hover:from-cyan-700 dark:hover:to-teal-700"
+                  onClick={() => setDarkMode(!darkMode)}>
                   <BsFillSunFill
-                    onClick={() => setDarkMode(!darkMode)}
+                    
                   />
                   </div>
                 ) : (
                   <div className="cursor-pointer text-sm sm:text-xl transition-all duration-300 font-bold text-white px-4 py-2 rounded-full bg-gradient-to-r from-orange-400 to-pink-400 
-                  hover:from-orange-600 hover:to-pink-600">
+                  hover:from-orange-600 hover:to-pink-600"
+                  onClick={() => setDarkMode(!darkMode)}>
                   <BsFillMoonFill
-                    onClick={() => setDarkMode(!darkMode)}
+                    
                     
                    /> 
                    </div>
