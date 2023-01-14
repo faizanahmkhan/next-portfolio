@@ -194,7 +194,7 @@ export default function Home() {
                     href="https://drive.google.com/file/d/1HePbe5Go0os8pzI5kaoU90dwaOdp_aWT/view?usp=pdf"
                     target="_blank"
                   >
-                    <p className="pt-6 font-bold hover:scale-105 transition-all text-xl">
+                    <p className="pt-6 font-bold hover:scale-105 transition-all sm:text-xl">
                       View My CV {">"}
                     </p>
                   </a>
