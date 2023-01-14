@@ -125,11 +125,10 @@ export default function Home() {
               Full-Stack Software Developer
             </h3>
             <p className="py-5 leading-8 text-gray-800 md:text-xl dark:text-gray-300">
-              I love exploring and creating <br />
-              I'm a lifelong learner <br />
-              <span className="">
-                Looking for opportunities in the industry
-              </span>
+              Continuously exploring and creating <br />
+              Dedicated lifelong learner <br />
+              Looking for opportunities in the industry
+              
             </p>
           </div>
 
