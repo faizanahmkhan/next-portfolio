@@ -336,8 +336,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        console.log(document.getElementById('project-card'));
-        console.log(this.state);
+       
         <section className="pt-12">
           <div className="m-10">
             <h3
