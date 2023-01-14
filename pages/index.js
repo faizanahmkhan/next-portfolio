@@ -45,7 +45,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-2 sm:px-10 md:px-20 lg:px-40 dark:bg-gray-900 scroll-smooth">
+      <main className="bg-white px-2 sm:px-10 md:px-20 lg:px-40 dark:bg-gray-900 scroll-smooth cursor-default">
         <section>
           <nav className="pt-8 sm:py-10">
             <ul
