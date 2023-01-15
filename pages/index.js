@@ -425,7 +425,7 @@ export default function Home() {
                       href="https://github.com/faizanahmkhan/worldpin_app"
                       target="_blank"
                     >
-                      &nbsp;&nbsp;GitHub {">"}&nbsp;&nbsp;
+                      GitHub {">"}
                     </a>
                   </li>
                 </ul>
@@ -510,7 +510,7 @@ export default function Home() {
                       href="https://github.com/faizanahmkhan/tictactoe_frontend"
                       target="_blank"
                     >
-                      &nbsp;&nbsp;GitHub {">"}&nbsp;&nbsp;
+                      GitHub {">"}
                     </a>
                   </li>
                 </ul>
@@ -575,18 +575,19 @@ export default function Home() {
                 will walk you through interacting with the API.
               </p>
               <div className="mt-auto">
-                <ul className="grid justify-center gap-1 sm:gap-4 sm:px-1 py-1">
+                <ul className="flex-1 px justify-center gap-1 sm:gap-4 mb-1
+                              3xl:px-16 2xl:px-0 xl:px-28 lg:px-16 md:px-24 sm:px-32 xs:px-16 px-12">
                   <li
                     className="xl:text-lg text-white font-semibold bg-gray-700 dark:bg-gray-800 hover:bg-gray-900  
                     outline outline-2  hover:outline-0 rounded-full transition-all duration-300
-                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 dark:outline-gray-800"
+                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 dark:outline-gray-800  "
                   >
                     <a
                       href="https://github.com/faizanahmkhan/music_api"
                       target="_blank"
                     >
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GitHub {">"}
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      GitHub {">"}
+                      
                     </a>
                   </li>
                 </ul>

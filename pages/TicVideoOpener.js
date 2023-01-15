@@ -33,7 +33,7 @@ export default function TicVideoPlayer() {
   
     return (
       <div>
-        <button onClick={handleOpen}>&nbsp;&nbsp;Live Demo {">"}&nbsp;&nbsp;</button>
+        <button onClick={handleOpen}>Live Demo {">"}</button>
         {isOpen && (
           <div className="video-overlay" aria-label="Video Modal" tabIndex="-1">
             <button className="close-button" onClick={handleClose} aria-label="Close Video Modal" ref={closeButtonRef}>
