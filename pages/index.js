@@ -23,18 +23,16 @@ import WpVideoPlayer from "./WpVideoOpener";
 import TicVideoPlayer from "./TicVideoOpener";
 import "../styles/Home.module.css";
 
-
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
   const handleLoad = () => {
-    console.log('PDF loaded successfully');
-  }
+    console.log("PDF loaded successfully");
+  };
 
   const handleError = (error) => {
-    console.log('Error loading PDF:', error);
-  }
-
+    console.log("Error loading PDF:", error);
+  };
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -93,23 +91,21 @@ export default function Home() {
 
               <div>
                 {darkMode ? (
-                  <div className="cursor-pointer text-base sm:text-xl transition-all duration-300 dark:bg-gradient-to-r  dark:from-cyan-500 dark:to-teal-500 font-bold text-white px-4 py-2 rounded-full 
+                  <div
+                    className="cursor-pointer text-base sm:text-xl transition-all duration-300 dark:bg-gradient-to-r  dark:from-cyan-500 dark:to-teal-500 font-bold text-white px-4 py-2 rounded-full 
                   dark:hover:from-cyan-700 dark:hover:to-teal-700"
-                  onClick={() => setDarkMode(!darkMode)}>
-                  <BsFillSunFill
-                    
-                  />
+                    onClick={() => setDarkMode(!darkMode)}
+                  >
+                    <BsFillSunFill />
                   </div>
                 ) : (
-                  <div className="cursor-pointer text-sm sm:text-xl transition-all duration-300 font-bold text-white px-4 py-2 rounded-full bg-gradient-to-r from-orange-400 to-pink-400 
+                  <div
+                    className="cursor-pointer text-sm sm:text-xl transition-all duration-300 font-bold text-white px-4 py-2 rounded-full bg-gradient-to-r from-orange-400 to-pink-400 
                   hover:from-orange-600 hover:to-pink-600"
-                  onClick={() => setDarkMode(!darkMode)}>
-                  <BsFillMoonFill
-                    
-                    
-                   /> 
-                   </div>
-                  
+                    onClick={() => setDarkMode(!darkMode)}
+                  >
+                    <BsFillMoonFill />
+                  </div>
                 )}
               </div>
             </ul>
@@ -128,7 +124,6 @@ export default function Home() {
               Continuously exploring and creating <br />
               Dedicated lifelong learner <br />
               Looking for opportunities in the industry
-              
             </p>
           </div>
 
@@ -148,7 +143,12 @@ export default function Home() {
           </div>
 
           <div className="relative mx-auto rounded-full w-60 h-60 sm:w-80 sm:h-80 mt-6 sm:mt-20 overflow-hidden md:h-96 md:w-96">
-              <Image src={face1} layout="fill" objectFit="cover" alt='image of myself'/>
+            <Image
+              src={face1}
+              layout="fill"
+              objectFit="cover"
+              alt="image of myself"
+            />
           </div>
         </section>
 
@@ -330,7 +330,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-       
+
         <section className="pt-12">
           <div className="m-10">
             <h3
@@ -344,7 +344,6 @@ export default function Home() {
           <div
             className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 2xl:max-3xl:gap-3 gap-12 sm:max-md:mx-6 md:max-lg:mx-20 "
             id="project-card"
-            
           >
             <div
               className="flex flex-col flex-1 text-center shadow-xl hover:shadow-2xl p-10  rounded-xl my-10 
@@ -406,28 +405,27 @@ export default function Home() {
               <div className="mt-auto">
                 <ul
                   className="grid grid-cols-2 gap-1 sm:gap-4 sm:px-1 py-1 
-                  2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1"
+                  2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1 3xl:max-4xl:px-0 3xl:max-4xl:gap-2"
                 >
                   <li
-                    className="xl:text-lg text-white font-semibold bg-gray-700 dark:bg-gray-800 hover:bg-gray-900  
+                    className="xl:text-lg 3xl:max-4xl:text-base text-white font-semibold bg-gray-700 dark:bg-gray-800 hover:bg-gray-900  
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300 
-                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 dark:outline-gray-800 " 
+                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 dark:outline-gray-800 cursor-pointer"
                   >
-                    
-                    <WpVideoPlayer/>
+                    <WpVideoPlayer />
                   </li>
-                  <li
-                    className="xl:text-lg text-white font-semibold bg-gray-700 dark:bg-gray-800 hover:bg-gray-900  
+                  <a
+                    href="https://github.com/faizanahmkhan/worldpin_app"
+                    target="_blank"
+                  >
+                    <li
+                      className="xl:text-lg 3xl:max-4xl:text-base  text-white font-semibold bg-gray-700 dark:bg-gray-800 hover:bg-gray-900  
                     outline outline-2  hover:outline-0 rounded-full transition-all duration-300
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 dark:outline-gray-800"
-                  >
-                    <a
-                      href="https://github.com/faizanahmkhan/worldpin_app"
-                      target="_blank"
                     >
                       GitHub {">"}
-                    </a>
-                  </li>
+                    </li>
+                  </a>
                 </ul>
               </div>
             </div>
@@ -492,27 +490,28 @@ export default function Home() {
               <div className="mt-auto">
                 <ul
                   className="grid grid-cols-2 align-center gap-1 sm:gap-4 sm:px-1 py-1 
-                2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1"
+                2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1
+                3xl:max-4xl:px-0 3xl:max-4xl:gap-2"
                 >
                   <li
-                    className="xl:text-lg text-white font-semibold bg-gray-700 dark:bg-gray-800 hover:bg-gray-900  
+                    className="xl:text-lg 3xl:max-4xl:text-base text-white font-semibold bg-gray-700 dark:bg-gray-800 hover:bg-gray-900  
                     outline outline-2 hover:outline-0 rounded-full transition-all duration-300
-                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 dark:outline-gray-800"
+                    dark:hover:bg-gray-700 dark:hover:outline-gray-800 dark:outline-gray-800 cursor-pointer"
                   >
-                    <TicVideoPlayer/>
+                    <TicVideoPlayer />
                   </li>
-                  <li
-                    className="xl:text-lg text-white font-semibold bg-gray-700 dark:bg-gray-800 hover:bg-gray-900  
+                  <a
+                    href="https://github.com/faizanahmkhan/tictactoe_frontend"
+                    target="_blank"
+                  >
+                    <li
+                      className="xl:text-lg 3xl:max-4xl:text-base text-white font-semibold bg-gray-700 dark:bg-gray-800 hover:bg-gray-900  
                     outline outline-2  hover:outline-0 rounded-full transition-all duration-300
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 dark:outline-gray-800"
-                  >
-                    <a
-                      href="https://github.com/faizanahmkhan/tictactoe_frontend"
-                      target="_blank"
                     >
                       GitHub {">"}
-                    </a>
-                  </li>
+                    </li>
+                  </a>
                 </ul>
               </div>
             </div>
@@ -575,21 +574,22 @@ export default function Home() {
                 will walk you through interacting with the API.
               </p>
               <div className="mt-auto">
-                <ul className="flex-1 px justify-center gap-1 sm:gap-4 mb-1
-                              3xl:px-16 2xl:px-0 xl:px-28 lg:px-16 md:px-24 sm:px-32 xs:px-16 px-12">
-                  <li
-                    className="xl:text-lg text-white font-semibold bg-gray-700 dark:bg-gray-800 hover:bg-gray-900  
+                <ul
+                  className="flex-1 px justify-center gap-1 sm:gap-4 mb-1
+                              5xl:px-28 3xl:px-16 2xl:px-0 xl:px-28 lg:px-16 md:px-24 sm:px-32 xs:px-16 px-12"
+                >
+                  <a
+                    href="https://github.com/faizanahmkhan/music_api"
+                    target="_blank"
+                  >
+                    <li
+                      className="xl:text-lg 3xl:max-4xl:text-base text-white font-semibold bg-gray-700 dark:bg-gray-800 hover:bg-gray-900  
                     outline outline-2  hover:outline-0 rounded-full transition-all duration-300
                     dark:hover:bg-gray-700 dark:hover:outline-gray-800 dark:outline-gray-800  "
-                  >
-                    <a
-                      href="https://github.com/faizanahmkhan/music_api"
-                      target="_blank"
                     >
                       GitHub {">"}
-                      
-                    </a>
-                  </li>
+                    </li>
+                  </a>
                 </ul>
               </div>
             </div>
@@ -656,17 +656,18 @@ export default function Home() {
               <div className="mt-auto">
                 <ul
                   className="grid grid-cols-2 align-bottom gap-1 sm:gap-4 sm:px-1 py-1 
-                2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1"
+                2xl:max-3xl:grid-rows-2 2xl:max-3xl:grid-cols-1
+                3xl:max-4xl:px-0 3xl:max-4xl:gap-2"
                 >
                   <li
-                    className=" xl:text-lg text-white font-semibold bg-gray-800  
+                    className="xl:text-lg 3xl:max-4xl:text-base  text-white font-semibold bg-gray-800  
                     outline outline-2  rounded-full transition-all duration-300 blur-sm
                      dark:outline-gray-800"
                   >
                     Live Demo {">"}
                   </li>
                   <li
-                    className=" xl:text-lg  text-white font-semibold bg-gray-800 
+                    className="xl:text-lg 3xl:max-4xl:text-base   text-white font-semibold bg-gray-800 
                     outline outline-2   rounded-full transition-all duration-300 blur-sm
                      dark:outline-gray-800"
                   >
