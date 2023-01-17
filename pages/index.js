@@ -285,7 +285,7 @@ export default function Home() {
                   className="text-4xl sm:text-5xl hover:text-red-400 hover:scale-110 
                 dark:hover:text-red-400"
                 />
-                <span className="font-medium hover:text-blue-400">Git</span>
+                <span className="font-medium hover:text-red-400">Git</span>
               </div>
 
               <div className="text-lime-500 lg:text-gray-600 lg:dark:text-white flex flex-col justify-center items-center mt-10">
