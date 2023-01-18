@@ -123,7 +123,7 @@ export default function Home() {
             <p className="py-5 leading-8 text-gray-800 md:text-xl dark:text-gray-300">
               Continuously exploring and creating <br />
               Dedicated lifelong learner <br />
-              Looking for opportunities in the industry
+              Looking for opportunities in the software industry
             </p>
           </div>
 
@@ -180,7 +180,7 @@ export default function Home() {
                   environment.{" "}
                   <span className="font-semibold">
                     I'm ready to roll up my sleeves and make an impact as a part
-                    of a team dedicated to creating innovative solutions.
+                    of a team dedicated to creating innovative products.
                   </span>
                 </p>
                 <div className="flex justify-center">
